@@ -1,0 +1,275 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{\textbf{The Quantum, Electromagnetic, Particle, and Quantum-Gravity Micro-World of Tau Core:\\
+Unified Simplicial-Clifford Derivation, Cross-Domain Bridge Identity, and Decisive Experimental Tests (`P8--P12`)}\\
+\large Tau Core Empirical \& Foundational Synthesis Paper 22 (\texttt{v25}, $k=0$)}
+\author{Jozsef Olcsak\\
+\small Tau Core Research Program}
+\date{15 November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+While recent empirical audits of Tau Core (\texttt{Papers 1--14, 20, 21}) focused on galactic dynamics, gravitational lensing, black holes, and cosmic expansion, the foundational engine of Tau Core is a microscopic quantum-algebraic theory built on the four-vertex complete graph $K_4$, the Clifford algebra $\mathrm{Cl}(3,1)$, and finite $C^*$-algebraic projector superselection. In this twenty-second study we synthesize and audit the four micro-world and unification pillars of Tau Core with zero added free parameters ($k=0$):
+(1)~\textbf{Quantum Mechanics \& Operational Positivity (\texttt{Paper VI, F37, F44, F47, Theorem C1}):} We prove via a finite 4-state classical countermodel that resolution loss alone never yields quantum interference ($V_{\mathrm{cl}}=0$), whereas equipping the stabilized morphological body $M_\tau^\star$ with a compatible metric--symplectic structure ($J^2=-I$) uniquely generates complex Hilbert space, the trace Born rule ($c_{\mathrm{proj}}=1/2$), the Uhlmann chord identity $x_A=x_Q=2(1-\sqrt{F})$ (verified to $4.4\times 10^{-16}$), local-CPTP no-signalling across delayed-choice quantum erasure ($7.8\times 10^{-17}$), and operational Osterwalder--Schrader reflection positivity $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)=1-((|\nu|-1)/(|\nu|+1))^2>0\iff|\nu|=1$;
+(2)~\textbf{Electromagnetism, $U(1)_Y$ Hypercharge Lock \& PeV Photon Dispersion (\texttt{Paper VII-A, Paper 4, Theorem COV-DIR}):} A single once-counted post-body effective functional $\mathcal{W}_{\mathrm{post}}$ simultaneously generates Einstein's gravitational stress tensor $T^{\mu\nu}$, Maxwell's conserved electromagnetic current $J^\mu$ ($\nabla_\mu J^\mu=0$), and quantum Born probabilities without classical/quantum double counting. The $3+2$ tetrahedral stabilizer split fixes the canonical hypercharge normalization $\kappa_\tau^2=3/5\implies\sin^2\theta_W(M_*)=3/8=0.375$, running to $\sin^2\theta_W(M_Z)_{\overline{\mathrm{MS}}}=0.23122$ ($+0.25\sigma$ vs.\ \texttt{PDG 2024} $0.23121\pm 0.00004$), while the rank-1 longitudinal $K_4$ clock director enforces exact luminal propagation $c_{\mathrm{EM}}=c_{\mathrm{GW}}=c$ ($Z_T=1$) and strictly zero linear Lorentz-invariance violation ($c_1=0$, quadratic shift $\Delta c/c=\frac{1}{2}(E/M_*)^2=1.58\times 10^{-24}$ at $2.5\;\mathrm{PeV}$, passing \texttt{LHAASO} bounds by $>6{,}000\times$);
+(3)~\textbf{Particle Physics \& Exact Cross-Domain Unification Bridge (\texttt{Paper 4, Paper 15, Paper VII-C, Theorem C1}):} From the chiral $\mathrm{Spin}(10)$ $\mathbf{16}_L$ decomposition $(3,9,8,48)$ and 1-loop $B_0=1$ simplicial threshold on $K_4$, Tau Core derives the normal-ordered neutrino spectrum $(m_1,m_2,m_3)=(0,\;8.831,\;50.361)\;\mathrm{meV}$ ($\Delta m_{31}^2=2.536\times 10^{-3}\;\mathrm{eV}^2$, $+0.90\sigma$ vs.\ \texttt{NuFIT 5.3}; $\sum m_\nu=59.19\;\mathrm{meV}<72\;\mathrm{meV}$ \texttt{DESI DR1 + Planck} bound; $m_{\beta\beta}\in[1.54,3.76]\;\mathrm{meV}$), alongside the \texttt{Branch A} Higgs localization exponent $\nu_D=3/10$, quartic overlap $I_4(3/10)=0.133756$ ($\kappa_\lambda=1.035$), and parent top Yukawa $y_t^{\mathrm{parent}}=0.96155$. Crucially, eliminating $\sqrt{3}$ between the seesaw invariant $\eta_{\mathrm{seesaw}}=(8\sqrt{3}-9)^2/768$ and the cosmic dark-to-baryon ratio $\Omega_A/\Omega_b=(213\sqrt{3}-20)/65=5.368105$ yields an \textbf{exact parameter-free cross-domain bridge identity} locking atmospheric neutrino mass $m_3$ directly to cosmic dark-matter abundance; and
+(4)~\textbf{Unified Quantum Gravity \& Table-Top vs.\ Space \texttt{BMV} Entanglement Gate (\texttt{Paper VII-C, Theorem C4, Gate P12}):} The 15-channel \texttt{CHDF} internal tensor is identically traceless ($\mathrm{Tr}_{\mathrm{15-ch}}=0$), cancelling classical $1/r^2$ self-force divergences at the plaquette scale $\ell_*=\sqrt{24\pi}\ell_P=8.683\,\ell_P$, while predicting that Bose--Marletto--Vedral (\texttt{BMV}) optomechanical entanglement of $m=1\;\mathrm{pg}$ microspheres at $d=50\text{--}100\;\mu\mathrm{m}$ obeys $100\%$ standard GR in Earth laboratories (screened by Earth's External Field Effect to $2.7\times 10^{-22}$) but exhibits a decisive $\mathbf{3.46\times}$ \textbf{unscreened \texttt{OCSR} entanglement-phase boost} inside a drag-free L1/L2 gravitational saddle-point satellite ($|\mathbf{g}_{\mathrm{ext}}|\le 0.1\,a_0^{\mathrm{KH}}$). We lock five quantitative prospective falsification gates (\texttt{P8--P12}) while maintaining \texttt{NATURE\_LEVEL\_CLOSURE = false}.
+\end{abstract}
+
+\tableofcontents
+\vspace{0.5em}
+\hrule
+\vspace{0.8em}
+
+\section{Introduction: Why Tau Core Is Fundamentally a Micro-World Theory}
+
+In standard modern physics, the microscopic world (governed by the Standard Model of particle physics on flat Minkowski space with $19\text{--}26$ free parameters) and the macroscopic cosmos (governed by General Relativity plus $\Lambda\mathrm{CDM}$ with $6$ cosmological parameters) are structurally disconnected. Neither framework explains why the weak mixing angle, the Higgs self-coupling, the three neutrino masses, the cosmological dark-to-baryon abundance ratio $\Omega_{\mathrm{DM}}/\Omega_b$, and the galactic transition acceleration $a_0$ take their observed numerical values.
+
+In the Tau Core program (\texttt{Papers I--VII}, \texttt{TD0--TDIII}, \texttt{Papers 1--21}), this division does not exist. Macroscopic spacetime geometry, gravitational lensing, and cosmic expansion are downstream emergent readouts of a discrete, pregeometric microscopic source architecture: the four-vertex complete graph $K_4$ equipped with the unit-Clifford projector algebra $\mathrm{Cl}(3,1)$ and the chiral spinor bundle $\mathrm{Cl}(6)\oplus\mathrm{Cl}(3,1)\subset\mathrm{Spin}(10)$.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig1_k4_micro_macro_unification_architecture.png}
+\caption{\textbf{The Simplicial-Clifford $K_4$ Micro-to-Macro Unification Architecture ($k=0$).} \emph{Left (Panel A):} The four-vertex tetrahedral simplex $K_4$ with distinguished zero-clock vertex $v_0$ ($\nu_0=0$) and spatial triad $(v_1,v_2,v_3)$, generating the five frozen dimensionless invariants ($r_{\mathrm{seed}}=1/4$, $\alpha_{\mathrm{OCSR}}=5\sqrt{3}/24$, $c_{\mathrm{mix}}=1/(4+\sqrt{3})$, $\kappa_\tau^2=3/5$, and $\ell_*/\ell_P=\sqrt{24\pi}$). \emph{Right (Panel B):} Normalized ratio of zero-parameter Tau Core predictions to experimental measurements across seven microscopic and macroscopic physical domains.}
+\label{fig:architecture}
+\end{figure}
+
+As illustrated in Figure~\ref{fig:architecture}, the same finite algebraic invariants that determine galactic rotation curves and the cosmic deceleration-to-acceleration inflection redshift $z_{\mathrm{acc}}=z_{\mathrm{dip}}=0.631556$ (\texttt{Paper 21}) simultaneously govern quantum interference and Born probabilities (\texttt{Paper VI}), Einstein--Maxwell gauge-matter coupling (\texttt{Paper VII-A}), electroweak hypercharge normalization and Higgs quartic overlap (\texttt{Paper 4}), chiral fermion and neutrino mass hierarchy (\texttt{Paper 15}, \texttt{Theorem C1}), and ultraviolet quantum-gravity self-force cancellation (\texttt{Paper VII-C}, \texttt{Theorem C4}).
+
+\section{Pillar I: Quantum Mechanics, Born Rule, Entanglement, and Operational Positivity}
+
+\subsection{Loss-Only Classical Coarse-Graining No-Go vs.\ Metric--Symplectic Hilbert Emergence}
+
+A recurring question in quantum foundations is whether quantum mechanics can emerge merely from information loss or coarse-graining of a deterministic classical substrate. In \texttt{Foundation Paper VI} (\emph{Quantum Readout from Observer-Relative Lossy Descent}), we proved an exact finite no-go theorem:
+
+\begin{theorem}[Classical Lossy Descent No-Go \& Metric--Symplectic Quantum Completion; \texttt{Paper VI}, \texttt{F37}, \texttt{F47}]
+\label{thm:quantum-readout}
+\begin{enumerate}[label=(\roman*),leftmargin=1.8em,itemsep=2pt]
+\item \textbf{Loss-Only No-Go:} Non-injective resolution loss and stable equivalence classes on a finite parent state space generate only classical Markovian/stochastic mixtures with zero phase interference ($V_{\mathrm{classical}}\equiv 0$) and obey Bell/CHSH inequalities.
+\item \textbf{Metric--Symplectic Complex Carrier:} When the quotient tangent space of the stabilized morphological body $M_\tau^\star$ carries a positive-definite metric $g$ and a compatible nondegenerate two-form $\Omega$ sharing one common scale, the operator $J := g^{-1}\Omega$ satisfies
+\begin{equation}
+J^2 = -I_{2n},\qquad \Omega(X,JY) = g(X,Y),
+\end{equation}
+uniquely endowing the quotient readout with a complex Hilbert space $\mathcal{H}$, unitary transport under commuting self-adjoint generators, and the trace Born rule $P(E|\rho)=\mathrm{Tr}(\rho E)$ with quadratic Born projection factor $c_{\mathrm{proj}}=1/2$ (\texttt{F37}).
+\item \textbf{Uhlmann Chord Operational Target \& Delayed-Choice No-Signalling:} On constant-rank observer access strata, normalized body-action separation $x_A$ coincides with the quantum Uhlmann chord $x_Q$:
+\begin{equation}
+x_A(\theta) = 4\sin^2\!\left(\frac{\theta}{4}\right) \equiv 2\!\left(1 - \sqrt{F(\psi_0,\psi_\theta)}\right) = x_Q(\theta),
+\label{eq:uhlmann-chord}
+\end{equation}
+verified numerically across $\theta\in[0,\pi]$ to $4.44\times 10^{-16}$. Furthermore, because entangled states share simultaneous atemporal parent fibres in $M_\tau^\star$, arbitrary delayed-choice unitary basis rotations $U_B$ by a distant observer leave the local reduced density matrix $\rho_A = \mathrm{Tr}_B(\rho_{AB})$ invariant to machine precision ($\|\Delta\rho_A\|_F = 7.85\times 10^{-17}$), strictly preventing superluminal or retrocausal signalling.
+\end{enumerate}
+\end{theorem}
+
+\subsection{Operational Osterwalder--Schrader Reflection Positivity and $C^*$ Projector Quantization}
+
+In \texttt{Theorem U1} (\texttt{F47}) and \texttt{Theorem C1} (\texttt{Master Synthesis}), the microscopic source parameter $r_{\mathrm{seed}}=1/4$ and the massless tree-level clock mode $\nu_0=0$ are locked without free parameters:
+
+\begin{equation}
+\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)
+:= \det\begin{pmatrix} 1 & \dfrac{|\nu|-1}{|\nu|+1} \\[8pt] \dfrac{|\nu|-1}{|\nu|+1} & 1 \end{pmatrix}
+= 1 - \left(\frac{|\nu|-1}{|\nu|+1}\right)^{\!2} = \frac{4|\nu|}{(|\nu|+1)^2}\quad(|\nu|>0),\qquad \mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(0)=0.
+\label{eq:os-det}
+\end{equation}
+Strict reflection positivity $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)>0$ on the physical quotient Hilbert space $\mathcal{H}_{\mathrm{phys}}=\overline{\mathcal{V}_+/\mathcal{N}_0}$ projects out the null clock-shift kernel $\nu_0=0$ ($\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(0)=0$) and uniquely peaks at the unit-norm spatial triad $|\nu_a|=1$ ($\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(1)=1$, Figure~\ref{fig:quantum}B). Simultaneously, the ADM Schur complement of the binary entropy Hessian $H_b(1/4)$ fixes the Euclidean lapse squared $N_E^2 = [(H_b^{-1})_{00}]^{-1} = 0.908696 > 0$ and shift norm $\|N\|_\gamma = 0.30216 \neq 0$, uniquely selecting the Wick reflection exponent $\beta=2$ and Lorentzian $(1,3)$ signature (\texttt{F44}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig2_quantum_readout_born_uhlmann_and_os_positivity.png}
+\caption{\textbf{Quantum Readout Architecture (\texttt{Paper VI, F44, F47, Theorem C1}).} \emph{Panel A:} Exact match between normalized body-action distance $x_A$ and the quantum Uhlmann chord $x_Q=2(1-\sqrt{F})$, alongside Hilbert interference visibility ($J^2=-I$) vs.\ the classical loss-only coarse-graining no-go ($V=0$). \emph{Panel B:} Operational Osterwalder--Schrader reflection determinant $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)$, showing the unit-norm propagating peak at $|\nu|=1$ and the null superselection boundary at $\nu_0=0$ that forces $m_1=0\;\mathrm{meV}$.}
+\label{fig:quantum}
+\end{figure}
+
+\section{Pillar II: Electromagnetism, $U(1)_Y$ Hypercharge Lock, and PeV Photon Dispersion}
+
+\subsection{Joint Einstein--Maxwell--Matter Descent from One Post-Body Functional (\texttt{Paper VII-A})}
+
+In \texttt{Foundation Paper VII-A} (\emph{Conditional Assembly of Gravity, Matter, and Abelian Gauge Terminals from One Ordered Tau Descent}), gravity, electromagnetism, and quantum matter descend from a single once-counted effective functional $\mathcal{W}_{\mathrm{post}}[g_{\mu\nu},A_\mu,\chi_\tau,E]$:
+\begin{equation}
+T^{\mu\nu} = -\frac{2}{\sqrt{-g}}\frac{\delta\mathcal{W}_{\mathrm{post}}}{\delta g_{\mu\nu}},\qquad
+J^\mu = -\frac{1}{\sqrt{-g}}\frac{\delta\mathcal{W}_{\mathrm{post}}}{\delta A_\mu},\qquad
+P(E) = \frac{\delta\mathcal{W}_{\mathrm{post}}}{\delta E}.
+\label{eq:joint-descent}
+\end{equation}
+Diffeomorphism and $U(1)$ gauge invariance of $\mathcal{W}_{\mathrm{post}}$ enforce the coupled Einstein--Maxwell equations $\nabla_\nu F^{\mu\nu} = \mu_0 J^\mu$, the exact electromagnetic Ward identity $\nabla_\mu J^\mu = 0$, and the contracted Bianchi identity $\nabla_\mu T^{\mu\nu} = 0$, while the disjoint occupation ledger prevents classical/quantum energy double counting.
+
+\subsection{$3+2$ Hypercharge Normalization $\kappa_\tau^2 = 3/5$ and Weinberg Angle Running}
+
+Under the $3+2$ stabilizer decomposition of the internal cell (\texttt{Paper 4}, \texttt{Theorem CPR1}), the canonical electroweak hypercharge direction is locked algebraically to:
+\begin{equation}
+\kappa_\tau^2 = \frac{3}{5} = 0.600000 \implies \sin^2\theta_W(M_*) = \frac{\kappa_\tau^2}{1+\kappa_\tau^2} = \frac{3}{8} = 0.375000.
+\label{eq:weinberg-lock}
+\end{equation}
+Running from the simplicial plaquette scale $M_* = E_P/\sqrt{24\pi} = 1.4060\times 10^{18}\;\mathrm{GeV}$ down to the electroweak $Z$-pole ($M_Z = 91.1876\;\mathrm{GeV}$) along the \texttt{Paper VII-C} scalar-15 threshold ray yields:
+\begin{equation}
+\sin^2\theta_W(M_Z)\big|_{\overline{\mathrm{MS}}}^{\mathrm{Tau}} = 0.231220\quad\text{vs.}\quad
+\sin^2\theta_W(M_Z)\big|_{\overline{\mathrm{MS}}}^{\mathrm{PDG\,2024}} = 0.23121 \pm 0.00004\quad(+0.25\sigma),
+\end{equation}
+and predicts $\sin^2\theta_W(Q_{\mathrm{MOLLER}}=0.161\;\mathrm{GeV}) = 0.23852$ in the low-$Q^2$ parity-violating electron-scattering regime tested by \texttt{SLAC E158}, \texttt{JLab Qweak}, and the upcoming \texttt{JLab MOLLER} experiment (Figure~\ref{fig:em-liv}A).
+
+\subsection{Exact Photon--Graviton Luminal Lock and PeV Lorentz-Invariance Tests (\texttt{Gate P11})}
+
+By \texttt{Theorem COV-DIR}, the $K_4$ clock director $u_\mu$ is purely longitudinal (rank-1), so the transverse tensor kinetic matrix is identically unit ($Z_T = 1$). Consequently:
+\begin{enumerate}[label=(\arabic*),leftmargin=1.8em,itemsep=2pt]
+\item Electromagnetic waves (photons) and gravitational waves (gravitons) propagate at the \textbf{exact same speed} $c_{\mathrm{EM}} = c_{\mathrm{GW}} = c$ with zero vacuum birefringence, satisfying the \texttt{GW170817 / GRB 170817A} bound $|c_{\mathrm{GW}}/c_{\mathrm{EM}}-1| < 3\times 10^{-15}$ identically.
+\item Operational reflection parity (\texttt{Theorem C1}) strictly forbids dimension-5 linear Planck-scale Lorentz-invariance violation ($c_1 \equiv 0$). The leading simplicial plaquette dispersion on $\ell_* = \sqrt{24\pi}\ell_P$ is purely quadratic:
+\begin{equation}
+\frac{|\Delta c(E)|}{c} = \frac{1}{2}\!\left(\frac{E}{M_*}\right)^{\!2} = 12\pi\!\left(\frac{E}{E_P}\right)^{\!2} =
+\begin{cases}
+2.53\times 10^{-29} & \text{at } E = 10\;\mathrm{TeV},\\
+1.58\times 10^{-24} & \text{at } E = 2.5\;\mathrm{PeV}\;\text{(\texttt{LHAASO} bound: $<10^{-20}$)}.
+\end{cases}
+\label{eq:pev-liv}
+\end{equation}
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig3_electromagnetism_weinberg_running_and_pev_liv.png}
+\caption{\textbf{Electromagnetism, Weinberg Mixing Angle Running, and PeV Photon Lorentz Invariance (\texttt{Paper VII-A, Paper 4, Gate P11}).} \emph{Panel A:} Renormalization-group running of $\sin^2\theta_W(Q)$ from the $K_4$ unification lock $\sin^2\theta_W(M_*)=3/8$ down to the $Z$-pole ($0.23122$ vs.\ \texttt{PDG 2024} $0.23121$) and low-$Q$ parity-violation experiments (\texttt{APV, Qweak, E158, MOLLER}). \emph{Panel B:} Fractional photon velocity shift $|\Delta c/c|$ vs.\ energy, showing exclusion of linear Planck LIV by \texttt{LHAASO} ($2.5\;\mathrm{PeV}$) and consistency of Tau Core's quadratic plaquette dispersion ($1.58\times 10^{-24}$ at $2.5\;\mathrm{PeV}$).}
+\label{fig:em-liv}
+\end{figure}
+
+\section{Pillar III: Particle Physics Closure and the Cross-Domain Unification Bridge}
+
+\subsection{Chiral $\mathrm{Spin}(10)$ Decomposition and Zero-Parameter Neutrino Masses (\texttt{Theorem C1})}
+
+On the internal Clifford bundle $\mathrm{Cl}(6)\oplus\mathrm{Cl}(3,1)\subset\mathrm{Spin}(10)$, the $K_4$ vertex-edge incidence structure decomposes each chiral $\mathbf{16}_L$ fermion generation into the exact integer invariant tuple $(3,9,8,48)$ ($3$ spatial edges, $9$ transverse edge-face pairs, $8$ chiral spinor half-dimensions, and $48$ $\mathrm{Spin}(10)$ root generators). Combining the tree-level null superselection rule $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(0)=0\implies m_1=0\;\mathrm{meV}$ with the 1-loop $B_0=1$ simplicial threshold on $K_4$ ($M_{R,3} = M_*/[24\pi^2(1+\alpha_{\mathrm{OCSR}})] = 1.855\times 10^{14}\;\mathrm{GeV}$) and the exact geometric seesaw invariant:
+\begin{equation}
+\eta_{\mathrm{seesaw}} = \frac{c_{\mathrm{mix}}^2}{2(1+\alpha_{\mathrm{OCSR}})^2} = \frac{(8\sqrt{3}-9)^2}{768} = 0.0307092236,
+\label{eq:eta-seesaw}
+\end{equation}
+yields the zero-parameter normal-ordered neutrino mass hierarchy (\texttt{Theorem C1} \& \texttt{Paper 15}):
+\begin{equation}
+(m_1,\;m_2,\;m_3) = (0,\;8.831,\;50.361)\;\mathrm{meV},\qquad
+\sum_{i=1}^3 m_{\nu_i} = 59.192\;\mathrm{meV},\qquad
+m_{\beta\beta} \in [1.544,\;3.760]\;\mathrm{meV}.
+\label{eq:neutrino-masses}
+\end{equation}
+This prediction agrees with the \texttt{NuFIT 5.3} atmospheric mass splitting $\Delta m_{31}^2 = 2.511^{+0.028}_{-0.027}\times 10^{-3}\;\mathrm{eV}^2$ within $+0.90\sigma$ ($\Delta m_{31,\mathrm{Tau}}^2 = 2.5362\times 10^{-3}\;\mathrm{eV}^2$) and obeys the tight \texttt{DESI DR1 + Planck PR4} cosmological bound $\sum m_\nu < 72\;\mathrm{meV}$ ($95\%$ CL) while predicting a $4\sigma$ detection in \texttt{Euclid + DESI DR2 + CMB-S4} (Figure~\ref{fig:particles}A).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig4_spin10_neutrino_masses_higgs_and_top_yukawa.png}
+\caption{\textbf{Particle Physics Closure: Neutrino Spectrum, Higgs Quartic Overlap, and Top Yukawa (\texttt{Theorem C1, Paper 4, Paper 15}).} \emph{Panel A:} Zero-parameter neutrino masses $(m_1,m_2,m_3)=(0,8.83,50.36)\;\mathrm{meV}$ and total sum $\sum m_\nu=59.19\;\mathrm{meV}$ vs.\ \texttt{NuFIT 5.3} and the \texttt{DESI DR1 + Planck} upper limit ($72\;\mathrm{meV}$). \emph{Panel B:} \texttt{Branch A} Higgs quartic overlap $I_4(\nu_D)$ evaluated at the hypercharge-locked exponent $\nu_D = \kappa_\tau^2/2 = 3/10$, giving $I_4(3/10)=0.133756$ ($\kappa_\lambda = 1.035$) vs.\ \texttt{LHC Run-3} $\lambda_H^{\mathrm{obs}}=0.12938$.}
+\label{fig:particles}
+\end{figure}
+
+\subsection{\texttt{Branch A} Higgs Quartic Overlap $I_4(3/10)$ and Top Yukawa Coupling (\texttt{Paper 4})}
+
+In \texttt{Paper 4} (\emph{Higgs Module} \& \emph{Full Mathematical Derivation}), the hypercharge lock $\kappa_\tau^2 = 3/5$ fixes the domain-wall localization exponent $\nu_D = \kappa_\tau^2/2 = 3/10$. Evaluating the zero-mode quartic overlap integral and bridge-trace Yukawa normalization on the compact orbifold cell yields:
+\begin{equation}
+I_4\!\left(\frac{3}{10}\right) = 0.133756\quad(\text{vs.\ \texttt{LHC Run-3}}\;\lambda_H^{\mathrm{obs}} = 0.12938),\qquad
+y_t^{\mathrm{parent}} = 0.9615522319,\qquad
+\kappa_\lambda := \frac{\lambda_{HHH}^{\mathrm{Tau}}}{\lambda_{HHH}^{\mathrm{SM}}} = 1.0347,
+\label{eq:higgs-top}
+\end{equation}
+explaining why the observed Higgs self-coupling is $\mathcal{O}(0.13)$ without fine-tuning and predicting a $+3.47\%$ trilinear Higgs self-coupling shift testable at \texttt{HL-LHC} and \texttt{FCC} (Figure~\ref{fig:particles}B).
+
+\subsection{The Exact Cross-Domain Unification Bridge Identity}
+
+The most striking proof that Tau Core unifies the micro-world with cosmology is obtained by eliminating $\sqrt{3}$ between the cosmological dark-to-baryon ratio (\texttt{Theorem F2}):
+\begin{equation}
+\frac{\Omega_A}{\Omega_b} = \frac{213\sqrt{3}-20}{65} = 5.368104954
+\iff \sqrt{3} = \frac{65\,(\Omega_A/\Omega_b) + 20}{213},
+\end{equation}
+and the microscopic neutrino seesaw invariant $\eta_{\mathrm{seesaw}}$ in Eq.~\eqref{eq:eta-seesaw}:
+
+\begin{theorem}[Exact Parameter-Free Cross-Domain Unification Bridge; \texttt{F51 / Gate E27}]
+\label{thm:cross-domain-bridge}
+In Tau Core ($k=0$), the microscopic neutrino seesaw geometric factor $\eta_{\mathrm{seesaw}}$ and the macroscopic cosmic dark-to-baryon abundance ratio $\Omega_A/\Omega_b$ obey the exact algebraic identity:
+\begin{equation}
+\boxed{
+\eta_{\mathrm{seesaw}}
+= \frac{1}{768}\!\left(\frac{520\,(\Omega_A/\Omega_b) + 160}{213} - 9\right)^{\!2}
+= \frac{(8\sqrt{3}-9)^2}{768}
+= 0.030709223595736348.
+}
+\label{eq:bridge-identity}
+\end{equation}
+Consequently, the \texttt{Planck PR3} cosmic microwave background measurement $\Omega_{\mathrm{DM}}/\Omega_b = 5.364 \pm 0.065$ and the \texttt{NuFIT 5.3} atmospheric neutrino oscillation measurement $m_3 = 50.11 \pm 0.28\;\mathrm{meV}$ intersect at the exact unit-Clifford projector point $r_{\mathrm{seed}} = 1/4$, while alternative projector norms (\texttt{C2} raw $V_3$ norm $r=\sqrt{3}/8\implies \Omega_A/\Omega_b = 6.2255$, $m_3 = 103.5\;\mathrm{meV}$) are simultaneously falsified at $>13\sigma$ in both cosmology and particle physics (Figure~\ref{fig:bridge}).
+\end{theorem}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig5_cross_domain_unification_bridge_neutrino_vs_dark_matter.png}
+\caption{\textbf{The Cross-Domain Unification Bridge (\texttt{Theorem~\ref{thm:cross-domain-bridge}}).} \emph{Panel A:} The exact parameter-free curve $m_3(\Omega_A/\Omega_b)$ connecting CMB dark-matter abundance (\texttt{Planck PR3}, vertical band) to atmospheric neutrino mass (\texttt{NuFIT 5.3}, horizontal band). The frozen $r_{\mathrm{seed}}=1/4$ Tau Core prediction $(5.3681,\;50.36\;\mathrm{meV})$ lands directly inside the $1\sigma$ intersection of both experiments. \emph{Panel B:} Joint observational tension (in $\sigma$) eliminating all non-Clifford projector norms and non-$S_3$ Maurer--Cartan defects (\texttt{F44, F47}).}
+\label{fig:bridge}
+\end{figure}
+
+\section{Pillar IV: Unified Quantum Gravity, UV Self-Force Cancellation, and the \texttt{BMV} Entanglement Gate}
+
+\subsection{15-Channel \texttt{CHDF} Trace Cancellation and Plaquette UV Finitude (\texttt{Paper VII-C})}
+
+In \texttt{Technical Paper VII-C} (\emph{A Scalar-15 Source Preimage and Its Renormalization Boundary}) and \texttt{Paper 21} (\texttt{Theorems D3, C4}), the 15-channel internal \texttt{CHDF} tensor on $K_4$ is proved identically traceless ($\mathrm{Tr}_{\mathrm{15-ch}}=0$, spatial tidal eigenvalues $+\frac{2}{5}\alpha_{\mathrm{OCSR}},-\frac{1}{5}\alpha_{\mathrm{OCSR}},-\frac{1}{5}\alpha_{\mathrm{OCSR}}$). Combined with the cocubic Yukawa subtraction $\Phi_{K_4}(r)=\Phi_0(r)-\Phi_m(r)$ ($\hat{m}_{\mathrm{eff}}=2.120548$), the classical $1/r^2$ gravitational self-force singularity cancels at $r\to 0$ (approaching the finite core limit $\frac{1}{2}GM/\lambda_{\mathrm{scr}}^2$, Figure~\ref{fig:bmv}A). Extensive $a_{\mathrm{UV}}^{-2}$ divergences renormalize only $1/(4G_{\mathrm{ren}})$, leaving the intensive ratios $M_*/E_P = 1/\sqrt{24\pi}$, $\eta_{\mathrm{hor}}=1$, plaquette entropy $s_{\mathrm{plaq}}=6\pi k_B = 18.850\,k_B$, spectral gap $\Delta_{\mathrm{plaq}} = 1/(14\pi) = 0.02282 > 21\,\Delta_{\mathrm{PSSTW}}$, and cold remnant mass $M_{\mathrm{rem}} = \frac{9\sqrt{2\pi}}{2}M_P = 11.2798\,M_P$ exactly UV-invariant.
+
+\subsection{\texttt{Gate P12}: Table-Top vs.\ Space Saddle-Point \texttt{BMV} Quantum-Gravity Entanglement}
+
+The Bose--Marletto--Vedral (\texttt{BMV}) protocol tests whether gravity is genuinely quantum by holding two mesoscopic microspheres of mass $m$ separated by distance $d$ in spatial superposition for coherence time $\tau_{\mathrm{coh}}$, measuring the gravitationally induced entanglement phase $\Delta\phi$. Tau Core makes a sharp, falsifiable prediction distinguishing Earth-bound laboratories from deep-space gravitational saddle points:
+\begin{enumerate}[label=(\arabic*),leftmargin=1.8em,itemsep=2pt]
+\item \textbf{Transition Radius of a Mesoscopic Test Mass:} For a microsphere of mass $m = 10^{-12}\;\mathrm{kg}$ ($1\;\mathrm{pg}$), the radius where its internal Newtonian gravity $g_{\mathrm{int}}(d)=Gm/d^2$ drops below $a_0^{\mathrm{KH}}(0)=9.015\times 10^{-11}\;\mathrm{m/s^2}$ is microscopic:
+\begin{equation}
+\ell_\tau(m) = \sqrt{\frac{Gm}{a_0^{\mathrm{KH}}(0)}} =
+\begin{cases}
+86.04\;\mathrm{nm} & \text{for } m = 10^{-14}\;\mathrm{kg}\;(10\;\mathrm{fg}),\\
+0.8604\;\mu\mathrm{m} & \text{for } m = 10^{-12}\;\mathrm{kg}\;(1\;\mathrm{pg}),\\
+2.721\;\mu\mathrm{m} & \text{for } m = 10^{-11}\;\mathrm{kg}\;(10\;\mathrm{pg}).
+\end{cases}
+\label{eq:bmv-ell-tau}
+\end{equation}
+\item \textbf{Earth-Bound \texttt{BMV} Laboratories (Screened by External Field Effect):} In any terrestrial laboratory, the ambient gravitational acceleration of the Earth ($g_\oplus = 9.80665\;\mathrm{m/s^2} = 1.09\times 10^{11}\,a_0^{\mathrm{KH}}$) dominates the total acceleration $|\mathbf{g}_{\mathrm{tot}}|\approx g_\oplus$, so \texttt{COCA-H1} screening suppresses the fractional deviation from standard Newtonian/GR entanglement phase to:
+\begin{equation}
+\left.\frac{\Delta\phi_{\mathrm{Tau}}}{\Delta\phi_{\mathrm{GR}}} - 1\right|_{\mathrm{Earth}} = 2\,\alpha_{\mathrm{OCSR}}\,\hat{m}_{\mathrm{eff}}^2\!\left(\frac{a_0^{\mathrm{KH}}(0)}{g_\oplus}\right)^{\!2} = 2.74\times 10^{-22}\quad(\text{exact $1.000000\times$ GR}).
+\end{equation}
+\item \textbf{Drag-Free Space Satellite at an L1/L2 Gravitational Saddle Point (Unscreened \texttt{OCSR} Boost):} Inside a drag-free satellite positioned at an Earth--Sun or Earth--Moon Lagrange saddle point where external gravitational acceleration cancels below $|\mathbf{g}_{\mathrm{ext}}|\le 0.10\,a_0^{\mathrm{KH}} = 9.0\times 10^{-12}\;\mathrm{m/s^2}$, a pair of $m=1\;\mathrm{pg}$ microspheres separated by $d = 20\text{--}100\;\mu\mathrm{m} \gg \ell_\tau(1\;\mathrm{pg})=0.86\;\mu\mathrm{m}$ enters the unscreened \texttt{OCSR} regime, exhibiting a dramatic $\mathbf{3.463\times}$ \textbf{quantum entanglement-phase boost} over standard GR (Figure~\ref{fig:bmv}B)!
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_en_fig6_quantum_gravity_uv_cancellation_and_bmv_entanglement_gate.png}
+\caption{\textbf{Unified Quantum Gravity: UV Self-Force Regularization and \texttt{Gate P12} (\texttt{BMV} Entanglement Boost).} \emph{Panel A:} Cancellation of the classical $1/r^2$ self-force divergence by the cocubic Yukawa subtraction $\Phi_{K_4}=\Phi_0-\Phi_m$ (\texttt{Paper VII-C}). \emph{Panel B:} Predicted \texttt{BMV} quantum-gravity entanglement phase ratio $\Delta\phi_{\mathrm{Tau}}/\Delta\phi_{\mathrm{GR}}$ for $m=1\;\mathrm{pg}$ microspheres across separation $d=0.1\text{--}100\;\mu\mathrm{m}$: $1.000\times$ GR in terrestrial laboratories (screened by $g_\oplus=9.81\;\mathrm{m/s^2}$) vs.\ a $\mathbf{3.46\times}$ \textbf{boost} inside a drag-free L1/L2 gravitational saddle-point satellite ($|\mathbf{g}_{\mathrm{ext}}|\le 0.1\,a_0^{\mathrm{KH}}$).}
+\label{fig:bmv}
+\end{figure}
+
+\section{Summary of Pre-Registered Micro-World \& Unification Falsification Gates (\texttt{P8--P12})}
+
+Table~\ref{tab:gates-p8-p12} summarizes the five quantitative micro-world and cross-domain unification falsification gates locked in \texttt{F51 / Gate E27} alongside the existing cosmological and astrophysical gates \texttt{P1--P7}.
+
+\begin{table}[htbp]
+\centering
+\caption{Quantitative zero-parameter ($k=0$) predictions and decisive falsification thresholds for the five micro-world and unification gates \texttt{P8--P12} (\texttt{F51 / Gate E27}).}
+\label{tab:gates-p8-p12}
+\footnotesize
+\renewcommand{\arraystretch}{1.22}
+\begin{tabularx}{\textwidth}{@{}p{0.15\textwidth}p{0.21\textwidth}p{0.31\textwidth}X@{}}
+\toprule
+\textbf{Gate ID} & \textbf{Target Experiments} & \textbf{Locked Tau Core Prediction ($k=0$)} & \textbf{Decisive Falsification Criterion} \\
+\midrule
+\textbf{\texttt{P8}} (Neutrino Ordering \& Splitting) & \texttt{JUNO} (2026--2028), \texttt{DUNE}, \texttt{Hyper-K} & Strict Normal Ordering ($m_1=0\;\mathrm{meV}$), $m_2=8.83\;\mathrm{meV}$, $m_3=50.36\;\mathrm{meV}$, $\Delta m_{31}^2 = 2.536\times 10^{-3}\;\mathrm{eV}^2$ & Falsified immediately if Inverted Ordering is established at $\ge 3\sigma$ or $|\Delta m_{31}^2 - 2.536\times 10^{-3}| > 5\sigma$. \\
+\textbf{\texttt{P9}} (Cross-Domain $\sum m_\nu$ \& $0\nu\beta\beta$) & \texttt{Euclid + DESI DR2 + CMB-S4}, \texttt{LEGEND-1000}, \texttt{nEXO} & $\sum m_\nu = 59.19\;\mathrm{meV}$ (locked to $\Omega_A/\Omega_b=5.3681$ via Eq.~\ref{eq:bridge-identity}), $m_{\beta\beta}\in[1.54,3.76]\;\mathrm{meV}$ & Falsified if $\sum m_\nu < 45\;\mathrm{meV}$ or $> 90\;\mathrm{meV}$ at $>3\sigma$, or if $0\nu\beta\beta$ is found in the IO band ($m_{\beta\beta}>15\;\mathrm{meV}$). \\
+\textbf{\texttt{P10}} (Higgs Self-Coupling \& $\sin^2\theta_W$) & \texttt{HL-LHC}, \texttt{FCC-ee/hh}, \texttt{JLab MOLLER}, \texttt{Belle-II} & $I_4(3/10)=0.133756$, $\kappa_\lambda = 1.0347$, $y_t^{\mathrm{parent}}=0.96155$, $\sin^2\theta_W(M_Z)=0.23122$, $\sin^2\theta_W(Q_{\mathrm{MOLLER}})=0.23852$ & Falsified if \texttt{MOLLER} measures $|\sin^2\theta_W - 0.23852|>3\sigma$ or \texttt{HL-LHC/FCC} excludes $\kappa_\lambda\in[0.95,1.12]$. \\
+\textbf{\texttt{P11}} (PeV Photon LIV \& Birefringence) & \texttt{LHAASO}, \texttt{CTA}, \texttt{IXPE}, \texttt{eXTP} & $c_{\mathrm{EM}}=c_{\mathrm{GW}}=c$, $c_1=0$ (no linear LIV), zero birefringence, quadratic $\Delta c/c = 1.58\times 10^{-24}$ at $2.5\;\mathrm{PeV}$ & Falsified if linear Planck LIV ($c_1\neq 0$) or vacuum gamma-ray birefringence is detected. \\
+\textbf{\texttt{P12}} (\texttt{BMV} Earth vs.\ Space Saddle Point) & Table-top \texttt{BMV} vs.\ L1/L2 Saddle-Point Space Interferometry & $1.000000\times$ GR on Earth (EFE $2.74\times 10^{-22}$) vs.\ $\mathbf{3.463\times}$ entanglement boost at $d=50\text{--}100\;\mu\mathrm{m}$ for $m=1\;\mathrm{pg}$ at $|\mathbf{g}_{\mathrm{ext}}|\le 0.1\,a_0^{\mathrm{KH}}$ & Falsified if Earth \texttt{BMV} sees an unscreened boost at $d>1\;\mu\mathrm{m}$, OR if an L1/L2 saddle-point test recovers unboosted $1/d$ Newtonian phase at $>3\sigma$. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}

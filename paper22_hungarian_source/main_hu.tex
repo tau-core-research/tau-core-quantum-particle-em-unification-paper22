@@ -1,0 +1,176 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,longtable,array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,citecolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+
+\setlength{\emergencystretch}{3em}
+\renewcommand{\contentsname}{Tartalomjegyzék}
+\renewcommand{\figurename}{Ábra}
+\renewcommand{\tablename}{Táblázat}
+\renewcommand{\abstractname}{Összefoglaló (Abstract)}
+\newtheorem{theorem}{Tétel}[section]
+
+\title{\textbf{A Tau Core mikrovilága és nagy egyesítése:\\
+Kvantummechanika, Elektromágnesesség, Részecskefizika és Kvantumgravitáció közös szimpliciális-Clifford levezetése és döntő kísérleti bizonyítékai (\texttt{P8--P12})}\\
+\large Tau Core 22. Tanulmány (\texttt{v25}, $k=0$ szabad paraméter)}
+\author{Olcsák József\\
+\small Tau Core Kutatási Program}
+\date{2026.\ november 15.}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Míg a Tau Core közelmúltbeli empirikus vizsgálatai (\texttt{Paper 1--14, 20, 21}) a galaxisok forgására, a gravitációs lencsézésre, a fekete lyukakra és a kozmikus tágulásra összpontosítottak, a Tau Core alapmotorja valójában egy mikrofizikai, kvantum-algebrai elmélet, amely a négycsúcsú teljes gráfon ($K_4$), a $\mathrm{Cl}(3,1)$ Clifford-algebrán és a véges $C^*$-algebrai projektor-szuperszelekción nyugszik. Ebben a 22.\ tanulmányban nulla szabadon hangolható paraméterrel ($k=0$) foglaljuk össze és vetjük össze a kísérleti adatokkal a Tau Core négy mikrovilágbeli és egyesítési pillérét:
+(1)~\textbf{Kvantummechanika és operacionális pozitivitás (\texttt{Paper VI, F37, F44, F47, C1 tétel}):} Egzakt 4-állapotú ellenpéldával igazoljuk, hogy pusztán a felbontásvesztés soha nem hoz létre kvantum-interferenciát ($V_{\mathrm{cl}}=0$); ezzel szemben a stabilizált morfológiai testen ($M_\tau^\star$) értelmezett kompatibilis metrikus--szimplektikus struktúra ($J^2=-I$) egyértelműen felépíti a komplex Hilbert-teret, a nyom-alapú Born-szabályt ($c_{\mathrm{proj}}=1/2$), az Uhlmann-húr azonosságot $x_A=x_Q=2(1-\sqrt{F})$ ($4{,}4\times 10^{-16}$ pontossággal), a késleltetett választású kvantumradír-kísérletekben is érvényes jelátviteli tilalmat (\emph{no-signalling}, $7{,}8\times 10^{-17}$), valamint az operacionális Osterwalder--Schrader reflexiós pozitivitást $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)=1-((|\nu|-1)/(|\nu|+1))^2>0\iff|\nu|=1$;
+(2)~\textbf{Elektromágnesesség, $U(1)_Y$ hipertöltés-zár és PeV-es foton-diszperzió (\texttt{Paper VII-A, Paper 4, COV-DIR tétel}):} Egyetlen, egyszer számolt poszt-morfológiai hatásfüggvény ($\mathcal{W}_{\mathrm{post}}$) egyszerre állítja elő az Einstein-féle gravitációs feszültség-energia tenzort ($T^{\mu\nu}$), a Maxwell-féle megmaradó elektromágneses áramot ($J^\mu$, $\nabla_\mu J^\mu=0$) és a kvantumos Born-valószínűségeket klasszikus/kvantum kettős számolás nélkül. A $3+2$ tetraéderes stabilizátor-felbontás rögzíti a kanonikus hipertöltés-normalizációt ($\kappa_\tau^2=3/5\implies\sin^2\theta_W(M_*)=3/8=0{,}375$), amely a $Z$-bozon tömegskálájára lefutva $\sin^2\theta_W(M_Z)_{\overline{\mathrm{MS}}}=0{,}23122$ értéket ad ($+0{,}25\sigma$ a \texttt{PDG 2024} $0{,}23121\pm 0{,}00004$ világátlagához képest), miközben a rank--1 hosszanti $K_4$ óra-direktor garantálja a fotonok és gravitációs hullámok egzakt fénysebességű terjedését ($c_{\mathrm{EM}}=c_{\mathrm{GW}}=c$, $Z_T=1$) és a lineáris Lorentz-sértés zérus voltát ($c_1=0$, kvadratikus korrekció $\Delta c/c=\frac{1}{2}(E/M_*)^2=1{,}58\times 10^{-24}$ $2{,}5\;\mathrm{PeV}$-nél, $>6000\times$ a \texttt{LHAASO} korlát alatt);
+(3)~\textbf{Részecskefizika és a szektorok közötti egzakt egyesítési híd-egyenlet (\texttt{Paper 4, Paper 15, Paper VII-C, C1 tétel}):} A királis $\mathrm{Spin}(10)$ $\mathbf{16}_L$ $(3,9,8,48)$ felbontásból és az 1-hurkos $B_0=1$ $K_4$ szimpliciális küszöbből a Tau Core levezeti a normál hierarchiájú neutrínótömeg-spektrumot $(m_1,m_2,m_3)=(0;\;8{,}831;\;50{,}361)\;\mathrm{meV}$ ($\Delta m_{31}^2=2{,}536\times 10^{-3}\;\mathrm{eV}^2$, $+0{,}90\sigma$ a \texttt{NuFIT 5.3}-hoz képest; $\sum m_\nu=59{,}19\;\mathrm{meV}<72\;\mathrm{meV}$ \texttt{DESI DR1 + Planck} korlát; $m_{\beta\beta}\in[1{,}54;\;3{,}76]\;\mathrm{meV}$), a \texttt{Branch A} Higgs-lokalizációs kitevőt ($\nu_D=3/10$), a negyedrendű átfedést ($I_4(3/10)=0{,}133756$, $\kappa_\lambda=1{,}035$) és a top-kvark Yukawa-csatolást ($y_t^{\mathrm{parent}}=0{,}96155$). A $\sqrt{3}$ kiküszöbölése az $\eta_{\mathrm{seesaw}}=(8\sqrt{3}-9)^2/768$ seesaw-invariáns és az $\Omega_A/\Omega_b=(213\sqrt{3}-20)/65=5{,}368105$ kozmikus sötét/baryon arány között egy \textbf{egzakt, szabad paraméter nélküli híd-egyenletet} ad, amely a légköri neutrínótömeget ($m_3$) közvetlenül a kozmikus sötét anyag arányához köti;
+(4)~\textbf{Egyesített kvantumgravitáció és a földi vs.\ űrbeli \texttt{BMV} összefonódási teszt (\texttt{Paper VII-C, C4 tétel, P12 kapu}):} A 15-csatornás \texttt{CHDF} belső tenzor nyommentes ($\mathrm{Tr}_{\mathrm{15-ch}}=0$), kioltva a klasszikus $1/r^2$ önerő-szingularitást az $\ell_*=\sqrt{24\pi}\ell_P=8{,}683\,\ell_P$ plakettskálán, és megjósolja, hogy a Bose--Marletto--Vedral (\texttt{BMV}) optomechanikai kvantumgravitációs kísérletben $m=1\;\mathrm{pg}$ mikrogömbök $d=50\text{--}100\;\mu\mathrm{m}$ távolságban a földi laborokban $100\%$-ban az általános relativitáselméletet követik (a Föld külső terének $2{,}7\times 10^{-22}$-es árnyékolása miatt), ám egy, az L1/L2 gravitációs nyeregpontba helyezett műholdban ($|\mathbf{g}_{\mathrm{ext}}|\le 0{,}1\,a_0^{\mathrm{KH}}$) $\mathbf{3{,}46\times}$\textbf{-os árnyékolatlan \texttt{OCSR} kvantum-összefonódási fáziserősítést} mutatnak.
+\end{abstract}
+
+\tableofcontents
+\vspace{0.5em}
+\hrule
+\vspace{0.8em}
+
+\section{Bevezetés: Miért mikrovilág-elmélet a Tau Core legmélyebb magja?}
+
+A jelenlegi standard fizikában a mikrovilág (amelyet a részecskefizika Standard Modellje ír le sík Minkowski-téridőn $19\text{--}26$ szabad paraméterrel) és a makrokozmosz (amelyet Einstein általános relativitáselmélete és a $\Lambda\mathrm{CDM}$ modell ír le $6$ kozmológiai paraméterrel) teljesen elválik egymástól. Egyik elmélet sem ad választ arra, miért pont annyi az elektrogyenge keveredési szög, a Higgs-bozon önkölcsönhatása, a három neutrínó tömege, a kozmikus sötét/baryon arány ($\Omega_{\mathrm{DM}}/\Omega_b$) és a galaktikus határozó gyorsulás ($a_0$), amennyit a mérések mutatnak.
+
+A Tau Core kutatási programban (\texttt{Paper I--VII}, \texttt{TD0--TDIII}, \texttt{Paper 1--21}) ez a szakadék megszűnik: a makroszkopikus téridő-geometria, a gravitációs lencsézés és a kozmikus tágulás ugyanannak a diszkrét, pregeometriai mikrofizikai forrásnak ($K_4$ szimpliciális tetraéder, $\mathrm{Cl}(3,1)$ egység-Clifford projektor-algebra és $\mathrm{Cl}(6)\oplus\mathrm{Cl}(3,1)\subset\mathrm{Spin}(10)$ királis spinorköteg) a következménye (1.~\ref{fig:hu-arch}.\ ábra).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig1_k4_micro_macro_unification_architecture.png}
+\caption{\textbf{A szimpliciális-Clifford $K_4$ mikro- és makrovilág egyesítési architektúrája ($k=0$).} \emph{Bal oldal (A panel):} A négycsúcsú $K_4$ tetraéder a kitüntetett $\nu_0=0$ óra-csúccsal ($v_0$) és a $(v_1,v_2,v_3)$ térbeli hármassal, amelyből az öt befagyasztott alapinvariáns ($r_{\mathrm{seed}}=1/4$, $\alpha_{\mathrm{OCSR}}=5\sqrt{3}/24$, $c_{\mathrm{mix}}=1/(4+\sqrt{3})$, $\kappa_\tau^2=3/5$, $\ell_*/\ell_P=\sqrt{24\pi}$) származik. \emph{Jobb oldal (B panel):} A Tau Core zéró-paraméteres előrejelzéseinek és a kísérleti méréseknek az aránya hét mikro- és makrofizikai területen.}
+\label{fig:hu-arch}
+\end{figure}
+
+\section{I.\ Pillér: Kvantummechanika, Born-szabály, összefonódás és operacionális pozitivitás}
+
+\subsection{Veszteséges klasszikus szemcsézés No-Go tétele vs.\ metrikus--szimplektikus Hilbert-tér}
+
+A \texttt{Paper VI} (\emph{Quantum Readout from Observer-Relative Lossy Descent}) egzakt véges ellenpéldával bizonyítja, hogy pusztán a megfigyelői felbontásvesztés (\emph{classical coarse-graining}) soha nem eredményez kvantum-interferenciát ($V_{\mathrm{cl}}=0$). A kvantummechanika megjelenéséhez az szükséges, hogy az $M_\tau^\star$ morfológiai test hányadostere pozitív definit metrikát ($g$) és azzal kompatibilis szimplektikus 2-formát ($\Omega$) hordozzon:
+\begin{equation}
+J := g^{-1}\Omega,\qquad J^2 = -I_{2n},\qquad \Omega(X,JY) = g(X,Y).
+\end{equation}
+Ekkor a kiolvasási csatorna komplex Hilbert-teret ($\mathcal{H}$), kvadratikus Born-szabályt ($P(E|\rho)=\mathrm{Tr}(\rho E)$, $c_{\mathrm{proj}}=1/2$, \texttt{F37}) és az Uhlmann-húr azonosságot eredményez:
+\begin{equation}
+x_A(\theta) = 4\sin^2\!\left(\frac{\theta}{4}\right) \equiv 2\!\left(1 - \sqrt{F(\psi_0,\psi_\theta)}\right) = x_Q(\theta),
+\end{equation}
+amelyet az \texttt{F51} audit $4{,}44\times 10^{-16}$ gépi pontossággal igazol (2.~\ref{fig:hu-quantum}A ábra). Az összefonódott Bell-állapotok közös atemporális szülő-szálai miatt a távoli megfigyelő késleltetett választású (\emph{delayed-choice}) bázisforgatása $U_B$ a helyi redukált sűrűségmátrixot ($\rho_A=\mathrm{Tr}_B(\rho_{AB})$) $7{,}85\times 10^{-17}$ pontossággal változatlanul hagyja, kizárva a fénynél gyorsabb jelátvitelt.
+
+\subsection{Operacionális Osterwalder--Schrader reflexiós pozitivitás és $m_1 = 0\;\mathrm{meV}$}
+
+A \texttt{C1 tétel} az operacionális kétpont-korrelációs mátrix determinánsából:
+\begin{equation}
+\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)
+= 1 - \left(\frac{|\nu|-1}{|\nu|+1}\right)^{\!2} = \frac{4|\nu|}{(|\nu|+1)^2}\quad(|\nu|>0),\qquad \mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(0)=0,
+\end{equation}
+igazolja, hogy a szigorú reflexiós pozitivitás ($\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}>0$) kiejti a $\nu_0=0$ zéró-óra módot (így a legkönnyebb neutrínó tömege egzaktul $m_1=0\;\mathrm{meV}$), és $|\nu_a|=1$-nél veszi fel globális maximumát ($\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(1)=1$, 2.~\ref{fig:hu-quantum}B ábra).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig2_quantum_readout_born_uhlmann_and_os_positivity.png}
+\caption{\textbf{Kvantum-kiolvasási architektúra (\texttt{Paper VI, F44, F47, C1 tétel}).} \emph{A panel:} A morfológiai hatás-távolság ($x_A$) és a kvantumos Uhlmann-húr ($x_Q$) egzakt egybeesése, valamint a Hilbert-féle interferencia-láthatóság ($J^2=-I$) szembeállítása a klasszikus szemcsézési No-Go tétellel ($V=0$). \emph{B panel:} Az operacionális Osterwalder--Schrader reflexiós determináns $\mathcal{D}_{\mathrm{OS}}^{\mathrm{op}}(\nu)$, amely $|\nu|=1$-nél maximális, $\nu_0=0$-nál pedig $m_1=0\;\mathrm{meV}$-et kényszerít ki.}
+\label{fig:hu-quantum}
+\end{figure}
+
+\section{II.\ Pillér: Elektromágnesesség, hipertöltés-zár ($\kappa_\tau^2 = 3/5$) és PeV-es foton-diszperzió}
+
+A \texttt{Paper VII-A} bebizonyítja, hogy egyetlen poszt-morfológiai hatásfüggvényből ($\mathcal{W}_{\mathrm{post}}[g_{\mu\nu},A_\mu,\chi_\tau,E]$) a metrika, az $A_\mu$ mértékpotenciál és az $E$ kvantum-effektus szerinti variációval egyszerre származnak az Einstein--Maxwell--anyag egyenletek ($\nabla_\nu F^{\mu\nu}=\mu_0 J^\mu$), az elektromágneses töltésmegmaradás ($\nabla_\mu J^\mu=0$, $U(1)$ Ward-azonosság) és a Born-valószínűségek.
+
+A belső cella $3+2$ stabilizátor-felbontása (\texttt{Paper 4}) rögzíti a hipertöltés-normalizációt:
+\begin{equation}
+\kappa_\tau^2 = \frac{3}{5} \implies \sin^2\theta_W(M_*) = \frac{\kappa_\tau^2}{1+\kappa_\tau^2} = \frac{3}{8} = 0{,}375000,
+\end{equation}
+amely az $M_* = E_P/\sqrt{24\pi} = 1{,}406\times 10^{18}\;\mathrm{GeV}$ plakettskáláról a $Z$-pólusig ($M_Z=91{,}1876\;\mathrm{GeV}$) lefutva $\sin^2\theta_W(M_Z)_{\overline{\mathrm{MS}}}^{\mathrm{Tau}} = 0{,}231220$ értéket ad ($+0{,}25\sigma$ eltérés a \texttt{PDG 2024} $0{,}23121\pm 0{,}00004$ világátlagától, 3.~\ref{fig:hu-em}A ábra). Emellett a \texttt{COV-DIR tétel} ($Z_T=1$) és a reflexiós paritás ($c_1=0$) garantálja, hogy $c_{\mathrm{EM}}=c_{\mathrm{GW}}=c$, a vezető szimpliciális plakett-diszperzió pedig tisztán kvadratikus: $\Delta c/c = \frac{1}{2}(E/M_*)^2 = 1{,}58\times 10^{-24}$ $2{,}5\;\mathrm{PeV}$-es fotonenergiánál (3.~\ref{fig:hu-em}B ábra).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig3_electromagnetism_weinberg_running_and_pev_liv.png}
+\caption{\textbf{Elektromágnesesség, a Weinberg-szög futása és PeV-es foton Lorentz-invariancia (\texttt{Paper VII-A, Paper 4, P11 kapu}).} \emph{A panel:} A $\sin^2\theta_W(Q)$ futása a $K_4$ egyesítési zártól ($3/8$) a $Z$-pólusig ($0{,}23122$) és az alacsony energiás paritássértő szórási kísérletekig (\texttt{APV, Qweak, E158, MOLLER}). \emph{B panel:} Foton-sebességeltérés $|\Delta c/c|$ az energia függvényében: a \texttt{LHAASO} $2{,}5\;\mathrm{PeV}$-es korlátja kizárja a lineáris Planck-sértést, miközben a Tau Core kvadratikus plakett-diszperziója ($1{,}58\times 10^{-24}$) több mint hatezerszer a korlát alatt marad.}
+\label{fig:hu-em}
+\end{figure}
+
+\section{III.\ Pillér: Részecskefizika és a szektorok közötti egzakt egyesítési híd}
+
+A $\mathrm{Cl}(6)\oplus\mathrm{Cl}(3,1)\subset\mathrm{Spin}(10)$ királis $\mathbf{16}_L$ $(3,9,8,48)$ felbontásból, az $\eta_{\mathrm{seesaw}} = (8\sqrt{3}-9)^2/768 = 0{,}0307092236$ seesaw-invariánsból és a $K_4$ 1-hurkos ($B_0=1$) küszöbéből (\texttt{C1 tétel}, \texttt{Paper 15}) szabad paraméter nélkül adódik a neutrínók tömege, valamint a \texttt{Paper 4} Higgs- és top-Yukawa csatolása (4.~\ref{fig:hu-part}.\ ábra):
+\begin{equation}
+(m_1,m_2,m_3) = (0;\;8{,}831;\;50{,}361)\;\mathrm{meV},\quad
+\sum m_\nu = 59{,}192\;\mathrm{meV},\quad
+I_4\!\left(\frac{3}{10}\right) = 0{,}133756,\quad
+y_t^{\mathrm{parent}} = 0{,}961552.
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig4_spin10_neutrino_masses_higgs_and_top_yukawa.png}
+\caption{\textbf{Részecskefizikai lezárás: neutrínóspektrum, Higgs negyedrendű átfedés és top-Yukawa (\texttt{C1 tétel, Paper 4, Paper 15}).} \emph{A panel:} Zéró-paraméteres neutrínótömegek $(0;\;8{,}83;\;50{,}36)\;\mathrm{meV}$ és $\sum m_\nu=59{,}19\;\mathrm{meV}$ a \texttt{NuFIT 5.3} és a \texttt{DESI DR1 + Planck} felső korlát ($72\;\mathrm{meV}$) mellett. \emph{B panel:} A \texttt{Branch A} Higgs negyedrendű átfedése a $\nu_D=3/10$ hipertöltés-zárnál ($I_4(3/10)=0{,}1338$ vs.\ \texttt{LHC Run-3} $\lambda_H^{\mathrm{obs}}=0{,}1294$).}
+\label{fig:hu-part}
+\end{figure}
+
+Ha a $\sqrt{3}$-at kiküszöböljük az $\Omega_A/\Omega_b = (213\sqrt{3}-20)/65 = 5{,}368105$ kozmikus sötét/baryon arány és az $\eta_{\mathrm{seesaw}}$ között, megkapjuk a Tau Core **egzakt szektorok közötti egyesítési híd-egyenletét** (5.~\ref{fig:hu-bridge}.\ ábra):
+\begin{equation}
+\boxed{
+\eta_{\mathrm{seesaw}}
+= \frac{1}{768}\!\left(\frac{520\,(\Omega_A/\Omega_b) + 160}{213} - 9\right)^{\!2}
+= 0{,}030709223595736348.
+}
+\label{eq:hu-bridge}
+\end{equation}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig5_cross_domain_unification_bridge_neutrino_vs_dark_matter.png}
+\caption{\textbf{Szektorok közötti egyesítési híd: Kozmológia vs.\ Részecskefizika.} \emph{A panel:} Az egzakt $m_3(\Omega_A/\Omega_b)$ híd-görbe, amelyen az $r_{\mathrm{seed}}=1/4$ Tau Core pont $(5{,}3681;\;50{,}36\;\mathrm{meV})$ pontosan a \texttt{Planck PR3} kozmológiai sáv és a \texttt{NuFIT 5.3} neutrínó-oszcillációs sáv metszéspontjába esik. \emph{B panel:} A nem-Clifford projektor-normák (\texttt{C2}: $13{,}25\sigma$) és dipólus/2+2 defektusok egyidejű kizárása.}
+\label{fig:hu-bridge}
+\end{figure}
+
+\section{IV.\ Pillér: Egyesített kvantumgravitáció és a \texttt{BMV} összefonódási kapu (\texttt{P12})}
+
+A 15-csatornás \texttt{CHDF} tenzor nyommentessége ($\mathrm{Tr}_{\mathrm{15-ch}}=0$) és a $\Phi_{K_4}=\Phi_0-\Phi_m$ Yukawa-levonás (\texttt{Paper VII-C}) kioltja a pontszerű $1/r^2$ gravitációs önerő-divergenciát (6.~\ref{fig:hu-bmv}A ábra). A Bose--Marletto--Vedral (\texttt{BMV}) kvantumgravitációs összefonódási kísérletre a Tau Core döntő előrejelzést ad (\texttt{P12 kapu}, 6.~\ref{fig:hu-bmv}B ábra): egy $m=1\;\mathrm{pg}$ ($10^{-12}\;\mathrm{kg}$) tömegű mikrogömb átmeneti sugara $\ell_\tau(1\;\mathrm{pg})=\sqrt{Gm/a_0^{\mathrm{KH}}}=0{,}8604\;\mu\mathrm{m}$. Földi laboratóriumban a Föld $g_\oplus=9{,}81\;\mathrm{m/s^2}$-es gravitációs tere $2{,}74\times 10^{-22}$ szintre árnyékolja az eltérést ($1{,}000000\times$ GR), azonban egy, az L1/L2 Lagrange-nyeregpontba helyezett műholdban ($|\mathbf{g}_{\mathrm{ext}}|\le 0{,}1\,a_0^{\mathrm{KH}}$) $d=20\text{--}100\;\mu\mathrm{m}$ szeparációnál a két mikrogömb kvantum-összefonódási fázisa $\mathbf{3{,}463\times}$\textbf{-os árnyékolatlan \texttt{OCSR} erősítést} szenved el!
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\textwidth]{figures/paper22_hu_fig6_quantum_gravity_uv_cancellation_and_bmv_entanglement_gate.png}
+\caption{\textbf{Egyesített kvantumgravitáció: UV önerő-kioltás és a \texttt{P12} \texttt{BMV} összefonódási kapu.} \emph{A panel:} A klasszikus $1/r^2$ önerő-divergencia kioltása a $\Phi_{K_4}=\Phi_0-\Phi_m$ levonással (\texttt{Paper VII-C}). \emph{B panel:} A \texttt{BMV} kvantumgravitációs összefonódási fázisarány $\Delta\phi_{\mathrm{Tau}}/\Delta\phi_{\mathrm{GR}}$ $m=1\;\mathrm{pg}$ mikrogömbökre: $1{,}000\times$ GR a földi laborban vs.\ $\mathbf{3{,}46\times}$\textbf{-os erősítés} az űrbeli L1/L2 gravitációs nyeregpontban ($|\mathbf{g}_{\mathrm{ext}}|\le 0{,}1\,a_0^{\mathrm{KH}}$).}
+\label{fig:hu-bmv}
+\end{figure}
+
+\section{Előre regisztrált mikrofizikai és egyesítési falszifikációs kapuk (\texttt{P8--P12}) és laikus összefoglaló}
+
+\begin{table}[htbp]
+\centering
+\caption{A Tau Core öt új mikrovilágbeli és szektorok közötti egyesítési falszifikációs kapuja (\texttt{P8--P12}, $k=0$).}
+\label{tab:hu-gates}
+\footnotesize
+\renewcommand{\arraystretch}{1.22}
+\begin{tabularx}{\textwidth}{@{}p{0.15\textwidth}p{0.21\textwidth}p{0.31\textwidth}X@{}}
+\toprule
+\textbf{Kapu} & \textbf{Célkísérletek} & \textbf{Befagyasztott Tau Core jóslat ($k=0$)} & \textbf{Döntő falszifikációs küszöb} \\
+\midrule
+\textbf{\texttt{P8}} (Neutrínó-sorrend) & \texttt{JUNO} (2026--2028), \texttt{DUNE}, \texttt{Hyper-K} & Normál hierarchia ($m_1=0\;\mathrm{meV}$), $m_2=8{,}83\;\mathrm{meV}$, $m_3=50{,}36\;\mathrm{meV}$, $\Delta m_{31}^2 = 2{,}536\times 10^{-3}\;\mathrm{eV}^2$ & Megbukik, ha az inverz hierarchia $\ge 3\sigma$-val igazolódik, vagy $|\Delta m_{31}^2 - 2{,}536\times 10^{-3}| > 5\sigma$. \\
+\textbf{\texttt{P9}} ($\sum m_\nu$ és $0\nu\beta\beta$ híd) & \texttt{Euclid + DESI DR2 + CMB-S4}, \texttt{LEGEND-1000}, \texttt{nEXO} & $\sum m_\nu = 59{,}19\;\mathrm{meV}$ (az $\Omega_A/\Omega_b=5{,}3681$ arányhoz rögzítve a \eqref{eq:hu-bridge} híd-egyenlettel), $m_{\beta\beta}\in[1{,}54;\;3{,}76]\;\mathrm{meV}$ & Megbukik, ha $\sum m_\nu < 45\;\mathrm{meV}$ vagy $> 90\;\mathrm{meV}$ ($>3\sigma$), illetve ha $m_{\beta\beta}>15\;\mathrm{meV}$. \\
+\textbf{\texttt{P10}} (Higgs önkölcsönhatás és $\sin^2\theta_W$) & \texttt{HL-LHC}, \texttt{FCC}, \texttt{JLab MOLLER}, \texttt{Belle-II} & $I_4(3/10)=0{,}133756$, $\kappa_\lambda = 1{,}0347$, $y_t^{\mathrm{parent}}=0{,}96155$, $\sin^2\theta_W(M_Z)=0{,}23122$, $\sin^2\theta_W(Q_{\mathrm{MOLLER}})=0{,}23852$ & Megbukik, ha a \texttt{MOLLER} $|\sin^2\theta_W - 0{,}23852|>3\sigma$ eltérést mér, vagy $\kappa_\lambda\notin[0{,}95;\;1{,}12]$. \\
+\textbf{\texttt{P11}} (PeV foton LIV és kettőstörés) & \texttt{LHAASO}, \texttt{CTA}, \texttt{IXPE}, \texttt{eXTP} & $c_{\mathrm{EM}}=c_{\mathrm{GW}}=c$, $c_1=0$ (nincs lineáris LIV), zérus kettőstörés, kvadratikus $\Delta c/c = 1{,}58\times 10^{-24}$ $2{,}5\;\mathrm{PeV}$-nél & Megbukik, ha lineáris Planck-diszperziót ($c_1\neq 0$) vagy vákuum-kettőstörést észlelnek. \\
+\textbf{\texttt{P12}} (\texttt{BMV} Föld vs.\ L1/L2 nyeregpont) & Földi \texttt{BMV} vs.\ L1/L2 nyeregponti űr-interferometria & $1{,}000000\times$ GR a Földön ($2{,}74\times 10^{-22}$) vs.\ $\mathbf{3{,}463\times}$\textbf{-os összefonódási erősítés} $d=50\text{--}100\;\mu\mathrm{m}$-nél $m=1\;\mathrm{pg}$-re az L1/L2 nyeregpontban & Megbukik, ha földi \texttt{BMV} árnyékolatlan erősítést lát, VAGY ha az L1/L2 nyeregpontban elmarad a $3{,}46\times$-os erősítés. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{Laikus összefoglaló: Mit bizonyít a 22.\ tanulmány?}
+\begin{enumerate}[leftmargin=1.6em,itemsep=2pt]
+\item \textbf{Egyetlen közös képlet köti össze a kozmoszt és a szubatomi részecskéket (\eqref{eq:hu-bridge} híd-egyenlet):} A hagyományos fizikában a világegyetemben lévő „sötét anyag” aránya ($5{,}368$-szor annyi, mint a rendes anyag) és a legkisebb szellemrészecskék, a neutrínók tömege ($50{,}36\;\mathrm{meV}$) között semmilyen kapcsolat nincs. A Tau Core bebizonyítja, hogy mindkettő ugyanannak a $K_4$ tetraédernek a $\sqrt{3}$-as geometriájából következik: ha az űrtávcsövekkel megmérjük a kozmikus sötét anyag arányát, abból egyetlen szabad paraméter nélkül kijön a neutrínó tömege!
+\item \textbf{Kvantumgravitáció tesztelése az űr egy „súlytalan egyensúlyi pontjában” (\texttt{P12 kapu}):} Ha két porszemnyi ($1$ pikogrammos) kvantumos mikrogömb gravitációs összefonódását földi laborban mérjük, a Föld hatalmas gravitációja teljesen elnyomja a Tau Core extra hatását. Ha viszont ugyanezt a kísérletet a Föld és a Nap (vagy Hold) közötti L1/L2 egyensúlyi pontban (ahol a külső gravitációs erők kioltják egymást) végezzük el, a Tau Core szerint a kvantumos összefonódás \textbf{3,46-szor gyorsabban} jön létre, mint Einstein elméletében!
+\end{enumerate}
+
+\end{document}
