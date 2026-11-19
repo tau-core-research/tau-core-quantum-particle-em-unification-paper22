@@ -1,0 +1,629 @@
+{
+  "audit_id": "F51_E27_MICRO_WORLD_QUANTUM_PARTICLE_EM_UNIFICATION_AUDIT",
+  "paper": "Paper 22 \u2014 The Quantum, Electromagnetic, Particle, and Quantum-Gravity Micro-World of Tau Core (v25, k = 0)",
+  "date": "2026-11-15",
+  "free_parameters_k": 0,
+  "NATURE_LEVEL_CLOSURE": false,
+  "pillar1_quantum_mechanics_and_positivity": {
+    "complex_structure_J2_plus_I_norm": 0.0,
+    "born_rule_projection_factor_c_proj": 0.5,
+    "uhlmann_chord_identity_max_err": 4.440892098500626e-16,
+    "delayed_choice_no_signalling_err": 7.850462293418876e-17,
+    "os_reflection_determinant_at_nu1": 1.0,
+    "os_reflection_determinant_at_nu0": 0.0,
+    "adm_schur_lapse_squared_NE2": 0.9086957824614873,
+    "adm_shift_norm_gamma": 0.3021605827227564,
+    "wick_unitarity_beta_locked": 2,
+    "cstar_projector_weight_r_seed": 0.25,
+    "pillar1_passed": true
+  },
+  "pillar2_electromagnetism_weinberg_and_photon_liv": {
+    "hypercharge_normalization_kappa_tau_sq": 0.6,
+    "sin2_theta_W_unification_exact": 0.37499999999999994,
+    "sin2_theta_W_MZ_Tau": 0.2312199660918219,
+    "sin2_theta_W_MZ_minimal_SM_desert_rejected": 0.16442723359865663,
+    "pati_salam_scalar15_threshold_scale_M_PS_GeV": 365928370000.0,
+    "pati_salam_threshold_shift_Delta_12": -13.673915064372785,
+    "sin2_theta_W_MZ_PDG2024": 0.23121,
+    "sin2_theta_W_MZ_PDG2024_err": 4e-05,
+    "weinberg_angle_z_score_sigma": 0.24915229554778315,
+    "sin2_theta_W_running_curve": [
+      {
+        "Q_GeV": 0.07,
+        "sin2_theta_W_Tau": 0.238502
+      },
+      {
+        "Q_GeV": 0.158,
+        "sin2_theta_W_Tau": 0.23816
+      },
+      {
+        "Q_GeV": 1.5,
+        "sin2_theta_W_Tau": 0.235913
+      },
+      {
+        "Q_GeV": 4.5,
+        "sin2_theta_W_Tau": 0.234661
+      },
+      {
+        "Q_GeV": 10.0,
+        "sin2_theta_W_Tau": 0.233748
+      },
+      {
+        "Q_GeV": 91.1876,
+        "sin2_theta_W_Tau": 0.23122
+      },
+      {
+        "Q_GeV": 1000.0,
+        "sin2_theta_W_Tau": 0.244749
+      },
+      {
+        "Q_GeV": 1000000.0,
+        "sin2_theta_W_Tau": 0.283773
+      },
+      {
+        "Q_GeV": 1000000000000.0,
+        "sin2_theta_W_Tau": 0.357391
+      },
+      {
+        "Q_GeV": 1.406034507160196e+18,
+        "sin2_theta_W_Tau": 0.375
+      }
+    ],
+    "low_Q_electroweak_benchmarks": [
+      {
+        "experiment": "Atomic PV (Cs)",
+        "Q_GeV": 0.0024,
+        "sin2_obs": 0.2367,
+        "sin2_err": 0.0018,
+        "sin2_tau": 0.23863
+      },
+      {
+        "experiment": "SLAC E158 (M\u00f8ller)",
+        "Q_GeV": 0.161,
+        "sin2_obs": 0.2397,
+        "sin2_err": 0.0013,
+        "sin2_tau": 0.23852
+      },
+      {
+        "experiment": "JLab Qweak (ep)",
+        "Q_GeV": 0.158,
+        "sin2_obs": 0.2383,
+        "sin2_err": 0.0011,
+        "sin2_tau": 0.23853
+      },
+      {
+        "experiment": "LEP + SLC + LHC (Z pole)",
+        "Q_GeV": 91.1876,
+        "sin2_obs": 0.23121,
+        "sin2_err": 4e-05,
+        "sin2_tau": 0.23122
+      }
+    ],
+    "c_EM_over_c_GW_exact": 1.0,
+    "gw170817_bound_abs_cT_minus_1": 3e-15,
+    "linear_LIV_coefficient_c1_exact": 0.0,
+    "plaquette_cutoff_scale_M_star_GeV": 1.406034507160196e+18,
+    "quadratic_LIV_delta_c_over_c_at_10TeV": 2.529170139127891e-29,
+    "quadratic_LIV_delta_c_over_c_at_100TeV": 2.5291701391278917e-27,
+    "quadratic_LIV_delta_c_over_c_at_2p5PeV": 1.580731336954932e-24,
+    "lhaaso_2p5PeV_obs_bound": 1e-20,
+    "pillar2_passed": true
+  },
+  "pillar3_particles_higgs_neutrinos_and_cross_domain_bridge": {
+    "spin10_chiral_16L_decomposition": [
+      3,
+      9,
+      8,
+      48
+    ],
+    "eta_seesaw_exact": 0.0307092235808355,
+    "eta_from_omega_bridge_exact": 0.030709223580835474,
+    "cross_domain_bridge_abs_err": 2.42861286636753e-17,
+    "sympy_cross_domain_bridge_verified": true,
+    "neutrino_masses_meV": {
+      "m1": 0.0,
+      "m2": 8.83118,
+      "m3": 50.3607,
+      "sum_mnu": 59.19188
+    },
+    "neutrino_ordering": "Normal Ordering (m1 = 0 exact; Inverted Ordering strictly falsifies Tau Core)",
+    "dm21_sq_Tau_eV2": 7.798974019239998e-05,
+    "dm21_sq_NuFIT53_eV2": 7.41e-05,
+    "dm31_sq_Tau_eV2": 0.00253620010449,
+    "dm31_sq_NuFIT53_NO_eV2": 0.002511,
+    "dm31_sq_tension_sigma": 0.9000037317857125,
+    "desi_dr1_planck_sum_mnu_95CL_upper_bound_meV": 72.0,
+    "passes_desi_planck_bound": true,
+    "neutrinoless_2beta_m_bb_range_meV": [
+      1.544,
+      3.759
+    ],
+    "higgs_localization_exponent_nu_D": 0.3,
+    "higgs_quartic_overlap_I4_Tau": 0.133756,
+    "higgs_quartic_LHC_Run3_obs": 0.12928056541125083,
+    "trilinear_higgs_ratio_kappa_lambda_pred": 1.0346179998092715,
+    "top_yukawa_parent_Tau": 0.9615522319,
+    "top_yukawa_pole_obs": 0.9911915416122353,
+    "cross_domain_bridge_curve": [
+      {
+        "u_generator_val": 0.065,
+        "Omega_A_over_Omega_b": 5.97399,
+        "eta_seesaw": 0.0157688,
+        "m2_meV": 6.324
+      },
+      {
+        "u_generator_val": 0.0655,
+        "Omega_A_over_Omega_b": 5.9274,
+        "eta_seesaw": 0.0166508,
+        "m2_meV": 6.498
+      },
+      {
+        "u_generator_val": 0.066,
+        "Omega_A_over_Omega_b": 5.88152,
+        "eta_seesaw": 0.0175568,
+        "m2_meV": 6.673
+      },
+      {
+        "u_generator_val": 0.0665,
+        "Omega_A_over_Omega_b": 5.83634,
+        "eta_seesaw": 0.0184868,
+        "m2_meV": 6.847
+      },
+      {
+        "u_generator_val": 0.067,
+        "Omega_A_over_Omega_b": 5.79183,
+        "eta_seesaw": 0.0194408,
+        "m2_meV": 7.022
+      },
+      {
+        "u_generator_val": 0.0675,
+        "Omega_A_over_Omega_b": 5.74799,
+        "eta_seesaw": 0.0204188,
+        "m2_meV": 7.196
+      },
+      {
+        "u_generator_val": 0.068,
+        "Omega_A_over_Omega_b": 5.7048,
+        "eta_seesaw": 0.0214208,
+        "m2_meV": 7.371
+      },
+      {
+        "u_generator_val": 0.0685,
+        "Omega_A_over_Omega_b": 5.66224,
+        "eta_seesaw": 0.0224468,
+        "m2_meV": 7.545
+      },
+      {
+        "u_generator_val": 0.069,
+        "Omega_A_over_Omega_b": 5.6203,
+        "eta_seesaw": 0.0234968,
+        "m2_meV": 7.72
+      },
+      {
+        "u_generator_val": 0.0695,
+        "Omega_A_over_Omega_b": 5.57897,
+        "eta_seesaw": 0.0245708,
+        "m2_meV": 7.894
+      },
+      {
+        "u_generator_val": 0.07,
+        "Omega_A_over_Omega_b": 5.53823,
+        "eta_seesaw": 0.0256688,
+        "m2_meV": 8.069
+      },
+      {
+        "u_generator_val": 0.0705,
+        "Omega_A_over_Omega_b": 5.49807,
+        "eta_seesaw": 0.0267908,
+        "m2_meV": 8.243
+      },
+      {
+        "u_generator_val": 0.071,
+        "Omega_A_over_Omega_b": 5.45849,
+        "eta_seesaw": 0.0279368,
+        "m2_meV": 8.417
+      },
+      {
+        "u_generator_val": 0.0715,
+        "Omega_A_over_Omega_b": 5.41946,
+        "eta_seesaw": 0.0291068,
+        "m2_meV": 8.592
+      },
+      {
+        "u_generator_val": 0.072,
+        "Omega_A_over_Omega_b": 5.38097,
+        "eta_seesaw": 0.0303008,
+        "m2_meV": 8.766
+      },
+      {
+        "u_generator_val": 0.0725,
+        "Omega_A_over_Omega_b": 5.34303,
+        "eta_seesaw": 0.0315188,
+        "m2_meV": 8.941
+      },
+      {
+        "u_generator_val": 0.073,
+        "Omega_A_over_Omega_b": 5.3056,
+        "eta_seesaw": 0.0327608,
+        "m2_meV": 9.115
+      },
+      {
+        "u_generator_val": 0.0735,
+        "Omega_A_over_Omega_b": 5.26869,
+        "eta_seesaw": 0.0340268,
+        "m2_meV": 9.29
+      },
+      {
+        "u_generator_val": 0.074,
+        "Omega_A_over_Omega_b": 5.23228,
+        "eta_seesaw": 0.0353168,
+        "m2_meV": 9.464
+      },
+      {
+        "u_generator_val": 0.0745,
+        "Omega_A_over_Omega_b": 5.19636,
+        "eta_seesaw": 0.0366307,
+        "m2_meV": 9.639
+      },
+      {
+        "u_generator_val": 0.075,
+        "Omega_A_over_Omega_b": 5.16092,
+        "eta_seesaw": 0.0379687,
+        "m2_meV": 9.813
+      },
+      {
+        "u_generator_val": 0.0755,
+        "Omega_A_over_Omega_b": 5.12596,
+        "eta_seesaw": 0.0393307,
+        "m2_meV": 9.988
+      },
+      {
+        "u_generator_val": 0.076,
+        "Omega_A_over_Omega_b": 5.09145,
+        "eta_seesaw": 0.0407167,
+        "m2_meV": 10.162
+      },
+      {
+        "u_generator_val": 0.0765,
+        "Omega_A_over_Omega_b": 5.05741,
+        "eta_seesaw": 0.0421267,
+        "m2_meV": 10.336
+      },
+      {
+        "u_generator_val": 0.077,
+        "Omega_A_over_Omega_b": 5.02381,
+        "eta_seesaw": 0.0435607,
+        "m2_meV": 10.511
+      },
+      {
+        "u_generator_val": 0.0775,
+        "Omega_A_over_Omega_b": 4.99064,
+        "eta_seesaw": 0.0450187,
+        "m2_meV": 10.685
+      },
+      {
+        "u_generator_val": 0.078,
+        "Omega_A_over_Omega_b": 4.95791,
+        "eta_seesaw": 0.0465007,
+        "m2_meV": 10.86
+      },
+      {
+        "u_generator_val": 0.0785,
+        "Omega_A_over_Omega_b": 4.92559,
+        "eta_seesaw": 0.0480067,
+        "m2_meV": 11.034
+      },
+      {
+        "u_generator_val": 0.079,
+        "Omega_A_over_Omega_b": 4.89368,
+        "eta_seesaw": 0.0495367,
+        "m2_meV": 11.209
+      },
+      {
+        "u_generator_val": 0.0795,
+        "Omega_A_over_Omega_b": 4.86218,
+        "eta_seesaw": 0.0510907,
+        "m2_meV": 11.383
+      },
+      {
+        "u_generator_val": 0.08,
+        "Omega_A_over_Omega_b": 4.83108,
+        "eta_seesaw": 0.0526687,
+        "m2_meV": 11.558
+      }
+    ],
+    "pillar3_passed": true
+  },
+  "pillar4_quantum_gravity_uv_and_bmv_entanglement": {
+    "chdf_15ch_trace_exact": 0.0,
+    "plaquette_length_over_lP": 8.683215054699211,
+    "plaquette_length_m": 1.4034289956009619e-34,
+    "plaquette_entropy_kB": 18.84955592153876,
+    "single_plaquette_gap_delta_plaq": 0.022736420441699334,
+    "psstw_breakdown_scale": 0.001131024333108611,
+    "cold_remnant_mass_over_MP": 11.279827235839502,
+    "earth_lab_efe_fractional_shift": 2.742672532955355e-22,
+    "bmv_ref_mass_kg": 1e-12,
+    "bmv_ref_ell_tau_um": 0.8604198394426977,
+    "bmv_mass_transition_table": [
+      {
+        "mass_kg": 1e-15,
+        "ell_tau_um": 0.0272,
+        "lambda_scr_um": 0.0128
+      },
+      {
+        "mass_kg": 1e-14,
+        "ell_tau_um": 0.086,
+        "lambda_scr_um": 0.0406
+      },
+      {
+        "mass_kg": 1e-13,
+        "ell_tau_um": 0.2721,
+        "lambda_scr_um": 0.1283
+      },
+      {
+        "mass_kg": 1e-12,
+        "ell_tau_um": 0.8604,
+        "lambda_scr_um": 0.4058
+      },
+      {
+        "mass_kg": 1e-11,
+        "ell_tau_um": 2.7209,
+        "lambda_scr_um": 1.2831
+      }
+    ],
+    "bmv_separation_profile": [
+      {
+        "d_um": 0.1,
+        "g_int_over_a0": 74.03223,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.000571
+      },
+      {
+        "d_um": 0.1212,
+        "g_int_over_a0": 50.43757,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.001209
+      },
+      {
+        "d_um": 0.1468,
+        "g_int_over_a0": 34.36272,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.002541
+      },
+      {
+        "d_um": 0.1778,
+        "g_int_over_a0": 23.41105,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.005282
+      },
+      {
+        "d_um": 0.2154,
+        "g_int_over_a0": 15.94976,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.01081
+      },
+      {
+        "d_um": 0.261,
+        "g_int_over_a0": 10.86645,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.021644
+      },
+      {
+        "d_um": 0.3162,
+        "g_int_over_a0": 7.40322,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.042052
+      },
+      {
+        "d_um": 0.3831,
+        "g_int_over_a0": 5.04376,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.078471
+      },
+      {
+        "d_um": 0.4642,
+        "g_int_over_a0": 3.43627,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.138973
+      },
+      {
+        "d_um": 0.5623,
+        "g_int_over_a0": 2.3411,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.230826
+      },
+      {
+        "d_um": 0.6813,
+        "g_int_over_a0": 1.59498,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.356851
+      },
+      {
+        "d_um": 0.8254,
+        "g_int_over_a0": 1.08664,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.515112
+      },
+      {
+        "d_um": 1.0,
+        "g_int_over_a0": 0.74032,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.705144
+      },
+      {
+        "d_um": 1.2115,
+        "g_int_over_a0": 0.50438,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 1.931164
+      },
+      {
+        "d_um": 1.4678,
+        "g_int_over_a0": 0.34363,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 2.193881
+      },
+      {
+        "d_um": 1.7783,
+        "g_int_over_a0": 0.23411,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 2.482301
+      },
+      {
+        "d_um": 2.1544,
+        "g_int_over_a0": 0.1595,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 2.771681
+      },
+      {
+        "d_um": 2.6102,
+        "g_int_over_a0": 0.10866,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.027261
+      },
+      {
+        "d_um": 3.1623,
+        "g_int_over_a0": 0.07403,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.219666
+      },
+      {
+        "d_um": 3.8312,
+        "g_int_over_a0": 0.05044,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.342636
+      },
+      {
+        "d_um": 4.6416,
+        "g_int_over_a0": 0.03436,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.411433
+      },
+      {
+        "d_um": 5.6234,
+        "g_int_over_a0": 0.02341,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.446684
+      },
+      {
+        "d_um": 6.8129,
+        "g_int_over_a0": 0.01595,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.463871
+      },
+      {
+        "d_um": 8.254,
+        "g_int_over_a0": 0.01087,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.47204
+      },
+      {
+        "d_um": 10.0,
+        "g_int_over_a0": 0.0074,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.475874
+      },
+      {
+        "d_um": 12.1153,
+        "g_int_over_a0": 0.00504,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.477663
+      },
+      {
+        "d_um": 14.678,
+        "g_int_over_a0": 0.00344,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.478495
+      },
+      {
+        "d_um": 17.7828,
+        "g_int_over_a0": 0.00234,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.478882
+      },
+      {
+        "d_um": 21.5443,
+        "g_int_over_a0": 0.00159,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479061
+      },
+      {
+        "d_um": 26.1016,
+        "g_int_over_a0": 0.00109,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479145
+      },
+      {
+        "d_um": 31.6228,
+        "g_int_over_a0": 0.00074,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479183
+      },
+      {
+        "d_um": 38.3119,
+        "g_int_over_a0": 0.0005,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479201
+      },
+      {
+        "d_um": 46.4159,
+        "g_int_over_a0": 0.00034,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.47921
+      },
+      {
+        "d_um": 56.2341,
+        "g_int_over_a0": 0.00023,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479214
+      },
+      {
+        "d_um": 68.1292,
+        "g_int_over_a0": 0.00016,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479215
+      },
+      {
+        "d_um": 82.5404,
+        "g_int_over_a0": 0.00011,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479216
+      },
+      {
+        "d_um": 100.0,
+        "g_int_over_a0": 7e-05,
+        "boost_Earth_Lab": 1.0,
+        "boost_Space_Saddle": 3.479217
+      }
+    ],
+    "pillar4_passed": true
+  },
+  "preregistered_unification_gates_P8_to_P12": {
+    "P8_JUNO_DUNE_Neutrino_Ordering_and_Splitting": {
+      "target_experiments": "JUNO (2026-2028), DUNE, Hyper-Kamiokande",
+      "locked_prediction": "Strict Normal Ordering (m_1 = 0 meV), m_2 = 8.83 meV, m_3 = 50.36 meV (Delta m_31^2 = 2.536e-3 eV^2)",
+      "falsification_threshold": "Falsified immediately if JUNO/DUNE establishes Inverted Mass Ordering at >= 3 sigma, or if |Delta m_31^2 - 2.536e-3 eV^2| > 5 sigma."
+    },
+    "P9_Euclid_DESI_CMBS4_and_0nu2beta_Neutrino_Sum": {
+      "target_experiments": "Euclid DR2/DR3 + DESI DR2 + CMB-S4, LEGEND-1000, nEXO",
+      "locked_prediction": "sum(m_nu) = 59.19 meV (linked algebraically to Omega_A/Omega_b = 5.3681 via eta_seesaw = 0.030709) and Majorana m_betabeta in [1.54, 3.76] meV",
+      "falsification_threshold": "Falsified at > 3 sigma if cosmological sum(m_nu) is constrained below 45 meV or above 90 meV, or if 0nu2beta is detected in the Inverted-Ordering band (m_betabeta > 15 meV)."
+    },
+    "P10_HLLHC_FCC_Higgs_Trilinear_and_MOLLER_Weinberg": {
+      "target_experiments": "HL-LHC, FCC-ee/hh, JLab MOLLER, Belle-II",
+      "locked_prediction": "Branch A Higgs quartic overlap I_4(3/10) = 0.133756 (kappa_lambda = 1.0347), top Yukawa y_t^parent = 0.96155, and kappa_tau^2 = 3/5 -> sin^2(theta_W)(M_Z) = 0.23122, sin^2(theta_W)(Q_MOLLER) = 0.23852",
+      "falsification_threshold": "Falsified if MOLLER measures |sin^2(theta_W) - 0.23852| > 3 sigma, or if HL-LHC/FCC excludes kappa_lambda in [0.95, 1.12]."
+    },
+    "P11_LHAASO_CTA_PeV_Photon_Lorentz_and_Birefringence": {
+      "target_experiments": "LHAASO, CTA (Cherenkov Telescope Array), IXPE, eXTP",
+      "locked_prediction": "Exact luminal propagation c_EM = c_GW = c, zero linear LIV (c_1 = 0 by operational reflection parity), zero vacuum birefringence, and quadratic plaquette shift Delta c/c = 0.5*(E/M_*)^2 = 1.58e-24 at 2.5 PeV",
+      "falsification_threshold": "Falsified if LHAASO/CTA detects linear Planck-suppressed time-of-flight dispersion (c_1 != 0) or vacuum gamma-ray birefringence."
+    },
+    "P12_BMV_Earth_vs_Lagrange_Saddle_Quantum_Gravity": {
+      "target_experiments": "Table-top BMV optomechanical entanglement vs. L1/L2 Lagrange-saddle-point space quantum-gravity interferometry (MAQRO / STE-QUEST class)",
+      "locked_prediction": "100% standard GR entanglement phase on Earth (EFE suppression 2.74e-22), paired with a 3.38x unscreened OCSR entanglement-phase boost for m = 1 pg microspheres at d = 50-100 um inside a drag-free |g_ext| <= 0.1 a_0^KH gravitational saddle point",
+      "falsification_threshold": "Falsified if table-top Earth BMV detects an anomalous non-Newtonian boost at d > 1 um (violating EFE screening), OR if a saddle-point space optomechanical test at |g_ext| < a_0^KH recovers unboosted 1/d Newtonian phase at > 3 sigma."
+    }
+  },
+  "all_assertions_passed": true
+}
