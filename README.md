@@ -4,7 +4,15 @@ Ez a repository tartalmazza a **Tau Core 22. tanulmányát** (magyar és angol n
 
 ---
 
-## Fő eredmények és kísérleti bizonyítékok (`F51 / Gate E27`)
+## 2026-11-23: a CP- és újrafűtési számítás határa
+
+Azonos kisenergiás neutrínóadatok mellett az ellentétes komplex seesaw-
+orientáció ellentétes összegzett, ízfelbontás nélküli bomlási forrást ad;
+valós szögnél ez a forrás nulla. A közölt barionaszimmetria ezért a
+választott UV- és újrafűtési előírás feltételes numerikus eredménye.
+A pozitív szupernyom önmagában nem választja ki az N=4 esetet.
+
+## Korábbi számítások és összehasonlítások (`F51 / Gate E27`)
 
 | Pillér / Szektor | Tau Core levezetés (`k = 0`) | Számszerű előrejelzés | Kísérleti mérés / Korlát | Egyezés / Státusz |
 | :--- | :--- | :--- | :--- | :--- |
@@ -27,3 +35,10 @@ Ez a repository tartalmazza a **Tau Core 22. tanulmányát** (magyar és angol n
   python3 scripts/compute_micro_world_unification_audit.py
   python3 scripts/generate_paper22_figures.py
   ```
+
+
+---
+
+## 2026-11-24: Közvetlen folytatás — Paper 30 (`v1.6.0`)
+
+A jelen tanulmány egygenerációs $\mathrm{Spin}(10)$ vázlatát a **`tau-core-spin10-flavor-hierarchy-smg-paper30`** (`Paper 30 v1.6.0`, commit `485b3f7`) viszi tovább a teljes 4-szimplex 32-dimenziós $\Lambda^{\mathrm{even}}(\mathbb{C}^5)$ Clifford-algebrára, a 16 paraméteres Paritás–Hermitikus 3-generációs íz-zárásra ($\mathrm{PH16}_{a13,h23}$, $\bar\theta_{\mathrm{QCD,tree}} \equiv 0$), a teljes $d=5$ és $d=6$ protonbomlás-, 2-hurkos egyesülés-, valódi 2-hurkos Bagnaschi Split-SUSY Higgs-tömeg és III.D pillér UV/RPV zárásra (amely a $\mathbb{Z}_2^{(210)}$ fázispajzs-\texttt{NO-GO} és 2-ízű Nardi ODE leptogenezis-előjelváltás miatt az **Alacsony-$\tan\beta$ Split-SUSY Sziget + apró bilineáris RPV** ág felé billenti a mérleget: $\tan\beta\in[2{,}0;\; 2{,}6], M_{\tilde q}\in[131;\; 214]\;\mathrm{TeV}, 100\%$ AeST DM, $T_{\mathrm{rh}}^{\max}=1{,}07\times 10^{11}\;\mathrm{GeV}$) és a 24-cellás királis rács 32-Majoranás SMG átmenetére. A befagyasztott Paper 22 archívum változatlan maradt.

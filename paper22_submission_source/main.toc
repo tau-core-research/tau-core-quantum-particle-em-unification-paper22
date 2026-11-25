@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introduction: Why Tau Core Is Fundamentally a Micro-World Theory}{2}{section.1}%
+\contentsline {section}{\numberline {2}Pillar I: Quantum Mechanics, Born Rule, Entanglement, and Operational Positivity}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Loss-Only Classical Coarse-Graining No-Go vs.\ Metric--Symplectic Hilbert Emergence}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Operational Osterwalder--Schrader Reflection Positivity and $C^*$ Projector Quantization}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Pillar II: Electromagnetism, $U(1)_Y$ Hypercharge Lock, and PeV Photon Dispersion}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Joint Einstein--Maxwell--Matter Descent from One Post-Body Functional (\texttt {Paper VII-A})}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}$3+2$ Hypercharge Normalization $\kappa _\tau ^2 = 3/5$, Weinberg Angle Running, and the Meaning of the Planck and Fine-Structure Constants}{5}{subsection.3.2}%
+\contentsline {paragraph}{Operational and Geometric Meaning of the Planck Constant ($\hbar $) and Fine-Structure Constant ($\alpha _{\mathrm {EM}}$):}{5}{section*.2}%
+\contentsline {subsection}{\numberline {3.3}Exact Photon--Graviton Luminal Lock and PeV Lorentz-Invariance Tests (\texttt {Gate P11})}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Pillar III: Particle Physics Closure and the Cross-Domain Unification Bridge}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Chiral $\mathrm {Spin}(10)$ Decomposition and Zero-Parameter Neutrino Masses (\texttt {Theorem C1})}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}\texttt {Branch A} Higgs Quartic Overlap $I_4(3/10)$ and Top Yukawa Coupling (\texttt {Paper 4})}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}The Exact Cross-Domain Unification Bridge Identity}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Conditional CP and reheating benchmarks}{8}{subsection.4.4}%
+\contentsline {paragraph}{Same light data, opposite unflavored source.}{10}{section*.3}%
+\contentsline {section}{\numberline {5}Pillar IV: Unified Quantum Gravity, UV Self-Force Cancellation, and the \texttt {BMV} Entanglement Gate}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}15-Channel \texttt {CHDF} Trace Cancellation and Plaquette UV Finitude (\texttt {Paper VII-C})}{10}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\texttt {Gate P12}: Table-Top vs.\ Space Saddle-Point \texttt {BMV} Quantum-Gravity Entanglement}{10}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Summary of Pre-Registered Micro-World \& Unification Falsification Gates (\texttt {P8--P12})}{11}{section.6}%
+\contentsline {section}{\numberline {7}Addendum (2026-11-25): \texttt {Q-DEC / T-DEC} UV K\"ahler Unification, Unique $\mathbb {C}$ Selection, and Composite Pointer-Clock Survival}{13}{section.7}%

@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Bevezetés: Miért mikrovilág-elmélet a Tau Core legmélyebb magja?}{2}{section.1}%
+\contentsline {section}{\numberline {2}I.\ Pillér: Kvantummechanika, Born-szabály, összefonódás és operacionális pozitivitás}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Veszteséges klasszikus szemcsézés No-Go tétele vs.\ metrikus--szimplektikus Hilbert-tér}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Operacionális Osterwalder--Schrader reflexiós pozitivitás és $m_1 = 0\tmspace +\thickmuskip {.2777em}\mathrm {meV}$}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}II.\ Pillér: Elektromágnesesség, hipertöltés-zár ($\kappa _\tau ^2 = 3/5$), a Planck- és a finomszerkezeti állandó jelentése, valamint a PeV-es foton-diszperzió}{4}{section.3}%
+\contentsline {paragraph}{A Planck-állandó ($\hbar $) és a finomszerkezeti állandó ($\alpha _{\mathrm {EM}}$) mértékegység-független jelentése a Tau Core-ban:}{4}{section*.2}%
+\contentsline {section}{\numberline {4}III.\ Pillér: Részecskefizika és a szektorok közötti egzakt egyesítési híd}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Feltételes CP- és újrafűtési összevetések}{7}{subsection.4.1}%
+\contentsline {paragraph}{Azonos könnyű adatok, ellentétes összegzett forrás.}{8}{section*.3}%
+\contentsline {section}{\numberline {5}IV.\ Pillér: Egyesített kvantumgravitáció és a \texttt {BMV} összefonódási kapu (\texttt {P12})}{8}{section.5}%
+\contentsline {section}{\numberline {6}Előre regisztrált mikrofizikai és egyesítési falszifikációs kapuk (\texttt {P8--P12}) és laikus összefoglaló}{9}{section.6}%
+\contentsline {section}{\numberline {7}Kiegészítés (2026-11-25): \texttt {Q-DEC / T-DEC} UV K\"ahler-egyesítés, egyedi $\mathbb {C}$-kiválasztás és összetett mutató-óra}{9}{section.7}%

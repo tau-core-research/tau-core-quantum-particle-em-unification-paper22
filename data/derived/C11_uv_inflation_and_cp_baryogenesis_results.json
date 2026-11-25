@@ -1,0 +1,120 @@
+{
+  "audit_id": "C11_UV_Inflation_Reheating_and_CP_Baryogenesis_Closure",
+  "runtime_seconds": 0.8457,
+  "k_added_free_parameters_route_I": 0,
+  "section_1_uv_starobinsky_k4_inflation_and_ir_nogo": {
+    "exact_M_star_over_M_Pl_red": 0.5773502691896257,
+    "ir_flrw_nogo_G_cosmo_over_GN_at_c2_1e_4": 0.9998500224966254,
+    "scalaron_mass_M_inf_GeV": 31959191958318.297,
+    "end_of_inflation_phi_over_MPl": 0.6146439942745194,
+    "end_of_inflation_H_end_GeV": 7722556018869.5205,
+    "scalaron_total_width_GeV": 37.03477874503275,
+    "branching_ratio_phi_to_N1N1": 0.01276795438158382,
+    "reheating_temperature_T_rh_GeV": 5134248686.221306,
+    "self_consistent_pivot_efolds_N_star": 51.41258912741034,
+    "H_star_pivot_GeV": 15759136818833.818,
+    "A_s_NLO_pred": 2.1011577134462803e-09,
+    "A_s_Planck2018_sigma_offset": 0.038590448209335375,
+    "n_s_NLO_pred": 0.9619894960565402,
+    "n_s_Planck2018_sigma_offset": -0.6929771293951951,
+    "tensor_to_scalar_r_NLO_pred": 0.004262597401415974,
+    "running_dns_dlnk_pred": -0.0007270631142852757,
+    "bounce_dilution_factor_exp_minus_3Nstar": 1.0360691082008106e-67
+  },
+  "section_2_multi_sector_cp_cpt_and_strong_cp_zero": {
+    "strong_cp_theta_tree_exact": 0.0,
+    "neutron_EDM_estimate_e_cm": 1e-31,
+    "neutron_EDM_bound_e_cm": 1.8e-26,
+    "sin_theta_tau_3_over_8sqrt2": 0.2651650429449553,
+    "theta_tau_rad": 0.2683750886143556,
+    "dirac_delta_CP_PMNS_deg": -90.0,
+    "discrete_C_P_T_CP_CPT_table": {
+      "A_0 (timelike director component)": {
+        "C": 1,
+        "P": 1,
+        "T": -1,
+        "CP": 1,
+        "CPT": -1
+      },
+      "theta = nabla_mu A^mu (= 3H)": {
+        "C": 1,
+        "P": 1,
+        "T": -1,
+        "CP": 1,
+        "CPT": -1
+      },
+      "d_t theta (= 3 H_dot)": {
+        "C": 1,
+        "P": 1,
+        "T": 1,
+        "CP": 1,
+        "CPT": 1
+      },
+      "J^0_{B-L} (baryon-minus-lepton density)": {
+        "C": -1,
+        "P": 1,
+        "T": 1,
+        "CP": -1,
+        "CPT": -1
+      },
+      "theta * A_mu J^mu_{B-L} (= -3H n_{B-L})": {
+        "C": -1,
+        "P": 1,
+        "T": 1,
+        "CP": -1,
+        "CPT": 1
+      },
+      "(d_mu theta) J^mu_{B-L} (= -3 H_dot n_{B-L})": {
+        "C": -1,
+        "P": 1,
+        "T": 1,
+        "CP": -1,
+        "CPT": -1
+      }
+    }
+  },
+  "section_3_nonthermal_scalaron_leptogenesis_exact_boltzmann": {
+    "M_1_GeV": 5696444235508.393,
+    "M_2_GeV": 185496198577398.56,
+    "casas_ibarra_complex_angle_z_tau": [
+      0.2683750886143556,
+      0.07216878364870322
+    ],
+    "effective_washout_mass_m_tilde_1_meV": 12.060051015993633,
+    "exact_1loop_CP_asymmetry_abs_eps_1": 8.470490308005477e-05,
+    "N_1_decay_width_GeV": 513690533.23775893,
+    "peak_reheating_temperature_T_max_GeV": 2110854405088.329,
+    "ratio_M1_over_Tmax": 2.6986438390903724,
+    "final_Y_B_minus_L": 2.446314216261652e-10,
+    "eta_B_symmetric_sphaleron_28_79": 6.103527416947175e-10,
+    "eta_B_Planck2018_sigma_offset": -0.4118145763206196,
+    "eta_B_broken_crossover_12_37": 5.585081072650505e-10
+  },
+  "section_4_spontaneous_director_baryogenesis_and_cpt_bounds": {
+    "weinberg_DeltaL2_decoupling_T_D_GeV": 20414466356965.523,
+    "laboratory_CPT_bound_GeV": 1e-27,
+    "non_minimal_Higgs_reheating_scan": [
+      {
+        "xi_H": 0.0,
+        "T_rh_GeV": 5096987248.839645,
+        "eta_B_at_c_theta_1": 2.9915079583499047e-13,
+        "required_c_theta_for_Planck": 2045.790980738607,
+        "present_day_CPT_shift_mu0_GeV": 8.837817036790783e-39
+      },
+      {
+        "xi_H": -5.0,
+        "T_rh_GeV": 158006604714.029,
+        "eta_B_at_c_theta_1": 2.8576443738571985e-10,
+        "required_c_theta_for_Planck": 2.1416240789050076,
+        "present_day_CPT_shift_mu0_GeV": 9.251816020869634e-42
+      },
+      {
+        "xi_H": -15.0,
+        "T_rh_GeV": 463825839644.4078,
+        "eta_B_at_c_theta_1": 2.4331427407484884e-09,
+        "required_c_theta_for_Planck": 0.2515265503131704,
+        "present_day_CPT_shift_mu0_GeV": 1.086594697352896e-42
+      }
+    ]
+  }
+}
