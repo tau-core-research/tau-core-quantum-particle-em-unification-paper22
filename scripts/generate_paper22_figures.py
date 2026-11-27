@@ -236,16 +236,17 @@ def make_fig3(lang: str) -> None:
         sin2_mz + 0.00741 * (1.0 - np.exp(0.75 * np.log10(np.maximum(q_arr, 1e-3) / mz))),
         sin2_mz + (sin2_unif - sin2_mz) * (np.log10(q_arr / mz) / math.log10(M_STAR_GEV / mz)),
     )
-    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"1-Loop Threshold Fit ($M_{\mathrm{PS}}=3.66\times10^{11}$ GeV; 2-loop OPEN)" if lang == "en" else r"1-hurkos küszöb-illesztés ($M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV; 2-hurkos NYITOTT)")
+    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"Schematic 1-Loop Threshold Fit ($M_{\mathrm{PS}}=3.66\times10^{11}$ GeV; 2-loop OPEN)" if lang == "en" else r"Sematikus 1-hurkos küszöb-illesztés ($M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV; 2-hurkos NYITOTT)")
+    ax1.axvline(math.log10(3.66e11), color="#64748b", linestyle=":", lw=1.4, label=r"Threshold $M_{\mathrm{PS}}=3.66\times10^{11}$ GeV (schematic)" if lang == "en" else r"Küszöb $M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV (sematikus)")
     ax1.scatter([math.log10(0.0024), math.log10(0.158), math.log10(mz)], [0.2367, 0.2383, 0.23121], color="#b45309", s=65, zorder=5, label=" Experimental Data (APV, Qweak, LEP/LHC)" if lang == "en" else " Kísérleti mérések (APV, Qweak, LEP/LHC)")
     ax1.scatter([math.log10(M_STAR_GEV)], [0.375], color="#dc2626", s=95, marker="*", zorder=6, label=r"$K_4$ Unification Lock $\sin^2\theta_W(M_*) = 3/8$" if lang == "en" else r"$K_4$ egyesítési zár $\sin^2\theta_W(M_*) = 3/8$")
 
     if lang == "en":
-        ax1.set_title("A. Electroweak Running from κ_τ² = 3/5 (Paper VII-A & Paper 4)", color="#b45309")
+        ax1.set_title("A. Schematic Electroweak Running (1-Param. M_PS Fit; 2-Loop OPEN)", color="#b45309")
         ax1.set_xlabel(r"Energy Scale $\log_{10}(Q / \mathrm{GeV})$", color="#0f172a")
         ax1.set_ylabel(r"Weak Mixing Angle $\sin^2\theta_W(Q)$", color="#0f172a")
     else:
-        ax1.set_title("A. Elektrogyenge keveredési szög futása (κ_τ² = 3/5)", color="#b45309")
+        ax1.set_title("A. Sematikus elektrogyenge futás (1-param. M_PS; 2-hurkos NYITOTT)", color="#b45309")
         ax1.set_xlabel(r"Energiaskála $\log_{10}(Q / \mathrm{GeV})$", color="#0f172a")
         ax1.set_ylabel(r"Gyenge keveredési szög $\sin^2\theta_W(Q)$", color="#0f172a")
     ax1.legend(loc="upper left", facecolor="#f8fafc", edgecolor="#0284c7", labelcolor="#0f172a", fontsize=8.2)
@@ -449,11 +450,11 @@ def make_fig6(lang: str) -> None:
     ax2.axvline(0.8604, color="#dc2626", linestyle=":", lw=1.8, label=r"Transition Radius $\ell_\tau(1\;\mathrm{pg}) = 0.86\;\mu\mathrm{m}$" if lang == "en" else r"Átmeneti sugár $\ell_\tau(1\;\mathrm{pg}) = 0,86\;\mu\mathrm{m}$")
 
     if lang == "en":
-        ax2.set_title("B. Gate P12: BMV Quantum-Gravity Entanglement Boost (m = 1 pg)", color="#b45309")
+        ax2.set_title("B. Gate P12: BMV Entanglement Boost [a₀^KH(0)-norm., ×1.77 under D1]", color="#b45309")
         ax2.set_xlabel(r"Microsphere Separation $d\;[\mu\mathrm{m}]$", color="#0f172a")
         ax2.set_ylabel(r"Entanglement Phase Ratio $\Delta\phi_{\mathrm{Tau}} / \Delta\phi_{\mathrm{GR}}$", color="#0f172a")
     else:
-        ax2.set_title("B. P12 kapu: BMV kvantumgravitációs összefonódási erősítés (m = 1 pg)", color="#b45309")
+        ax2.set_title("B. P12 kapu: BMV erősítés [a₀^KH(0)-norm., ×1,77 D1 alatt]", color="#b45309")
         ax2.set_xlabel(r"Mikrogömbök távolsága $d\;[\mu\mathrm{m}]$", color="#0f172a")
         ax2.set_ylabel(r"Összefonódási fázisarány $\Delta\phi_{\mathrm{Tau}} / \Delta\phi_{\mathrm{GR}}$", color="#0f172a")
     ax2.legend(loc="center right", facecolor="#f8fafc", edgecolor="#0284c7", labelcolor="#0f172a", fontsize=8.0)
