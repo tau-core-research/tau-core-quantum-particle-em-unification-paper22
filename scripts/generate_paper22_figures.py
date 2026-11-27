@@ -19,7 +19,6 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 FIG_DIR = REPO_ROOT / "figures"
 EN_FIG_DIR = REPO_ROOT / "paper22_submission_source" / "figures"
 HU_FIG_DIR = REPO_ROOT / "paper22_hungarian_source" / "figures"
-ARTIFACT_DIR = Path("/Users/jolcsak/.gemini/antigravity/brain/a427c21d-9cd4-494e-9b77-f0a1253ad296")
 
 for d in (FIG_DIR, EN_FIG_DIR, HU_FIG_DIR):
     d.mkdir(parents=True, exist_ok=True)
@@ -54,8 +53,6 @@ def _save_fig(fig: plt.Figure, lang: str, basename: str) -> None:
     plt.close(fig)
     target_dir = EN_FIG_DIR if lang == "en" else HU_FIG_DIR
     shutil.copy2(p_main, target_dir / fname)
-    if ARTIFACT_DIR.exists():
-        shutil.copy2(p_main, ARTIFACT_DIR / fname)
 
 
 def make_fig1(lang: str) -> None:
@@ -91,7 +88,7 @@ def make_fig1(lang: str) -> None:
         ax1.text(vx + offsets[idx][0], vy + offsets[idx][1], v_labels[idx], color="#0f172a", fontsize=9.5, fontweight="bold", ha="center")
 
     if lang == "en":
-        title1 = "A. Simplicial-Clifford K₄ Source Packet (k = 0)"
+        title1 = "A. Simplicial-Clifford K₄ Source Packet (D1: a₀ fitted, k = 1)"
         box_lines = [
             r"$\mathbf{Pillar\ I\ (Quantum\ C^*\ Projector):}\; r_{\mathrm{seed}} = \omega(p_i) = 1/4$",
             r"$\mathbf{OCSR\ Susceptibility:}\; \alpha_{\mathrm{OCSR}} = 5\sqrt{3}/24 = 0.360844$",
@@ -100,7 +97,7 @@ def make_fig1(lang: str) -> None:
             r"$\mathbf{Simplicial\ Plaquette:}\; \ell_* = \sqrt{24\pi}\,\ell_P = 8.6832\,\ell_P$",
         ]
     else:
-        title1 = "A. Szimpliciális-Clifford K₄ forráscsomag (k = 0)"
+        title1 = "A. Szimpliciális-Clifford K₄ forráscsomag (D1: a₀ illesztett, k = 1)"
         box_lines = [
             r"$\mathbf{I.\ Pillér\ (Kvantum\ C^*\ projektor):}\; r_{\mathrm{seed}} = \omega(p_i) = 1/4$",
             r"$\mathbf{OCSR\ szuszceptibilitás:}\; \alpha_{\mathrm{OCSR}} = 5\sqrt{3}/24 = 0,360844$",
@@ -115,31 +112,31 @@ def make_fig1(lang: str) -> None:
         bbox=dict(boxstyle="round,pad=0.45", facecolor="#f8fafc", edgecolor="#0284c7", lw=1.2)
     )
 
-    # Right panel: Multi-domain normalized agreement (Tau Core prediction / Observed value)
+    # Right panel: Multi-domain normalized agreement (Tau Core / Observed value)
     if lang == "en":
-        title2 = "B. Cross-Domain Unification Agreement (Tau / Experiment)"
+        title2 = "B. Cross-Domain Consistency (Tau / Experiment, Audit 2026-11-27)"
         labels = [
             "Quantum Born / Uhlmann\n(x_A / x_Q = 1.0000)",
-            "Electroweak Angle\nsin²θ_W(M_Z) = 0.23122",
+            "Electroweak Angle (1-param M_PS)\nsin²θ_W(M_Z) = 0.23122",
             "Higgs Quartic Overlap\nI₄(3/10) = 0.1338",
             "Top-Quark Yukawa\ny_t = 0.9616",
             "Atmospheric Neutrino\nm₃ = 50.36 meV (NuFIT)",
-            "Cosmic Dark-to-Baryon\nΩ_A/Ω_b = 5.3681 (Planck)",
-            "Inflection Coincidence\nz_acc = z_dip = 0.6316",
+            "Calibrated Dark-to-Baryon\nΩ_A/Ω_b = 5.3681 (Planck)",
+            "Inflection Identity\nz_acc ≡ z_dip = 0.6316",
         ]
-        xlab = "Ratio: Tau Core (k = 0) / Experimental Value"
+        xlab = "Ratio: Tau Core (Audit D1/C16) / Experimental Value"
     else:
-        title2 = "B. Mikro- és makrovilág egyesítési egyezése (Tau / Mérés)"
+        title2 = "B. Mikro- és makrovilág egyezése (Tau / Mérés, Audit 2026-11-27)"
         labels = [
             "Kvantum Born / Uhlmann\n(x_A / x_Q = 1,0000)",
-            "Elektrogyenge szög\nsin²θ_W(M_Z) = 0,23122",
+            "Elektrogyenge szög (1-param. M_PS)\nsin²θ_W(M_Z) = 0,23122",
             "Higgs negyedrendű csat.\nI₄(3/10) = 0,1338",
             "Top-kvark Yukawa\ny_t = 0,9616",
             "Légköri neutrínótömeg\nm₃ = 50,36 meV (NuFIT)",
-            "Sötét/baryon arány\nΩ_A/Ω_b = 5,3681 (Planck)",
-            "Inflexiós egybeesés\nz_acc = z_dip = 0,6316",
+            "Kalibrált sötét/baryon arány\nΩ_A/Ω_b = 5,3681 (Planck)",
+            "Inflexiós azonosság\nz_acc ≡ z_dip = 0,6316",
         ]
-        xlab = "Arány: Tau Core előrejelzés (k = 0) / Kísérleti érték"
+        xlab = "Arány: Tau Core (Audit D1/C16) / Kísérleti érték"
 
     ratios = [1.0000, 0.23122 / 0.23121, 0.133756 / 0.12938, 0.96155 / 0.963, 50.361 / 50.11, 5.3681 / 5.364, 0.6316 / 0.645]
     errs = [0.001, 0.0002, 0.025, 0.028, 0.006, 0.012, 0.035]
@@ -239,7 +236,7 @@ def make_fig3(lang: str) -> None:
         sin2_mz + 0.00741 * (1.0 - np.exp(0.75 * np.log10(np.maximum(q_arr, 1e-3) / mz))),
         sin2_mz + (sin2_unif - sin2_mz) * (np.log10(q_arr / mz) / math.log10(M_STAR_GEV / mz)),
     )
-    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"Tau Core RG Trajectory ($\kappa_\tau^2 = 3/5 \Rightarrow 3/8$ at $M_*$)" if lang == "en" else r"Tau Core RG-pálya ($\kappa_\tau^2 = 3/5 \Rightarrow 3/8$ az $M_*$ skálán)")
+    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"1-Loop Threshold Fit ($M_{\mathrm{PS}}=3.66\times10^{11}$ GeV; 2-loop OPEN)" if lang == "en" else r"1-hurkos küszöb-illesztés ($M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV; 2-hurkos NYITOTT)")
     ax1.scatter([math.log10(0.0024), math.log10(0.158), math.log10(mz)], [0.2367, 0.2383, 0.23121], color="#b45309", s=65, zorder=5, label=" Experimental Data (APV, Qweak, LEP/LHC)" if lang == "en" else " Kísérleti mérések (APV, Qweak, LEP/LHC)")
     ax1.scatter([math.log10(M_STAR_GEV)], [0.375], color="#dc2626", s=95, marker="*", zorder=6, label=r"$K_4$ Unification Lock $\sin^2\theta_W(M_*) = 3/8$" if lang == "en" else r"$K_4$ egyesítési zár $\sin^2\theta_W(M_*) = 3/8$")
 
@@ -294,7 +291,7 @@ def make_fig4(lang: str) -> None:
     obs_vals = [0.0, 8.61, 50.11, 58.72]
     x = np.arange(len(cats))
     w = 0.34
-    ax1.bar(x - w / 2, tau_vals, width=w, color="#059669", edgecolor="#0f172a", label="Tau Core (k = 0, Theorem C1)" if lang == "en" else "Tau Core (k = 0, Theorem C1)")
+    ax1.bar(x - w / 2, tau_vals, width=w, color="#059669", edgecolor="#0f172a", label="Tau Core (Theorem C1)" if lang == "en" else "Tau Core (Theorem C1)")
     ax1.bar(x + w / 2, obs_vals, width=w, color="#0284c7", edgecolor="#0f172a", label="NuFIT 5.3 (Normal Ordering Floor)" if lang == "en" else "NuFIT 5.3 (Normál hierarchia küszöb)")
     ax1.axhline(72.0, color="#dc2626", linestyle="--", lw=2.0, label="DESI DR1 + Planck 95% CL Upper Limit (72 meV)" if lang == "en" else "DESI DR1 + Planck 95% CL felső határ (72 meV)")
     for xi, tv in zip(x, tau_vals):
@@ -303,10 +300,10 @@ def make_fig4(lang: str) -> None:
     ax1.set_xticklabels(cats, color="#0f172a", fontsize=10)
     ax1.set_ylim(0, 84)
     if lang == "en":
-        ax1.set_title("A. Zero-Parameter Neutrino Mass Spectrum (Gates P8 & P9)", color="#b45309")
+        ax1.set_title("A. Neutrino Mass Spectrum (Theorem C1, Gates P8 & P9)", color="#b45309")
         ax1.set_ylabel("Mass [meV]", color="#0f172a")
     else:
-        ax1.set_title("A. Zéró-paraméteres neutrínótömeg-spektrum (P8 és P9 kapuk)", color="#b45309")
+        ax1.set_title("A. Neutrínótömeg-spektrum (Theorem C1, P8 és P9 kapuk)", color="#b45309")
         ax1.set_ylabel("Tömeg [meV]", color="#0f172a")
     ax1.legend(loc="upper left", facecolor="#f8fafc", edgecolor="#0284c7", labelcolor="#0f172a", fontsize=8.2)
 
