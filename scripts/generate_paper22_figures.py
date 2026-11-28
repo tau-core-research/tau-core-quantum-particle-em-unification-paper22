@@ -117,10 +117,10 @@ def make_fig1(lang: str) -> None:
         title2 = "B. Cross-Domain Consistency (Tau / Experiment, Audit 2026-11-27)"
         labels = [
             "Quantum Born / Uhlmann\n(x_A / x_Q = 1.0000)",
-            "Electroweak Angle (1-param M_PS)\nsin²θ_W(M_Z) = 0.23122",
+            "Electroweak Angle (C16 1p/2L)\nsin²θ_W(M_Z) = 0.23122",
             "Higgs Quartic Overlap\nI₄(3/10) = 0.1338",
             "Top-Quark Yukawa\ny_t = 0.9616",
-            "Atmospheric Neutrino\nm₃ = 50.36 meV (NuFIT)",
+            "Atmospheric Neutrino\nm₃ = 50.36 meV (C19 ansatz)",
             "Calibrated Dark-to-Baryon\nΩ_A/Ω_b = 5.3681 (Planck)",
             "Inflection Identity\nz_acc ≡ z_dip = 0.6316",
         ]
@@ -129,10 +129,10 @@ def make_fig1(lang: str) -> None:
         title2 = "B. Mikro- és makrovilág egyezése (Tau / Mérés, Audit 2026-11-27)"
         labels = [
             "Kvantum Born / Uhlmann\n(x_A / x_Q = 1,0000)",
-            "Elektrogyenge szög (1-param. M_PS)\nsin²θ_W(M_Z) = 0,23122",
+            "Elektrogyenge szög (C16 1p/2L)\nsin²θ_W(M_Z) = 0,23122",
             "Higgs negyedrendű csat.\nI₄(3/10) = 0,1338",
             "Top-kvark Yukawa\ny_t = 0,9616",
-            "Légköri neutrínótömeg\nm₃ = 50,36 meV (NuFIT)",
+            "Légköri neutrínótömeg\nm₃ = 50,36 meV (C19 ansatz)",
             "Kalibrált sötét/baryon arány\nΩ_A/Ω_b = 5,3681 (Planck)",
             "Inflexiós azonosság\nz_acc ≡ z_dip = 0,6316",
         ]
@@ -236,17 +236,17 @@ def make_fig3(lang: str) -> None:
         sin2_mz + 0.00741 * (1.0 - np.exp(0.75 * np.log10(np.maximum(q_arr, 1e-3) / mz))),
         sin2_mz + (sin2_unif - sin2_mz) * (np.log10(q_arr / mz) / math.log10(M_STAR_GEV / mz)),
     )
-    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"Schematic 1-Loop Threshold Fit ($M_{\mathrm{PS}}=3.66\times10^{11}$ GeV; 2-loop OPEN)" if lang == "en" else r"Sematikus 1-hurkos küszöb-illesztés ($M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV; 2-hurkos NYITOTT)")
-    ax1.axvline(math.log10(3.66e11), color="#64748b", linestyle=":", lw=1.4, label=r"Threshold $M_{\mathrm{PS}}=3.66\times10^{11}$ GeV (schematic)" if lang == "en" else r"Küszöb $M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV (sematikus)")
+    ax1.plot(log_q, sin2_curve, color="#0284c7", lw=2.6, label=r"Schematic 1-Loop Ray ($M_{\mathrm{PS}}=3.66\times10^{11}$ GeV; 2L Split-SUSY C16 CONDITIONAL)" if lang == "en" else r"Sematikus 1-hurkos sugár ($M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV; 2L Split-SUSY C16 FELTÉTELES)")
+    ax1.axvline(math.log10(3.66e11), color="#64748b", linestyle=":", lw=1.4, label=r"1-Loop $M_{\mathrm{PS}}=3.66\times10^{11}$ GeV (schematic)" if lang == "en" else r"1-hurkos $M_{\mathrm{PS}}=3{,}66\times10^{11}$ GeV (sematikus)")
     ax1.scatter([math.log10(0.0024), math.log10(0.158), math.log10(mz)], [0.2367, 0.2383, 0.23121], color="#b45309", s=65, zorder=5, label=" Experimental Data (APV, Qweak, LEP/LHC)" if lang == "en" else " Kísérleti mérések (APV, Qweak, LEP/LHC)")
     ax1.scatter([math.log10(M_STAR_GEV)], [0.375], color="#dc2626", s=95, marker="*", zorder=6, label=r"$K_4$ Unification Lock $\sin^2\theta_W(M_*) = 3/8$" if lang == "en" else r"$K_4$ egyesítési zár $\sin^2\theta_W(M_*) = 3/8$")
 
     if lang == "en":
-        ax1.set_title("A. Schematic Electroweak Running (1-Param. M_PS Fit; 2-Loop OPEN)", color="#b45309")
+        ax1.set_title("A. Schematic Electroweak Running (1p M_PS Fit; 2-Loop Split-SUSY C16)", color="#b45309")
         ax1.set_xlabel(r"Energy Scale $\log_{10}(Q / \mathrm{GeV})$", color="#0f172a")
         ax1.set_ylabel(r"Weak Mixing Angle $\sin^2\theta_W(Q)$", color="#0f172a")
     else:
-        ax1.set_title("A. Sematikus elektrogyenge futás (1-param. M_PS; 2-hurkos NYITOTT)", color="#b45309")
+        ax1.set_title("A. Sematikus elektrogyenge futás (1p M_PS; 2L Split-SUSY C16)", color="#b45309")
         ax1.set_xlabel(r"Energiaskála $\log_{10}(Q / \mathrm{GeV})$", color="#0f172a")
         ax1.set_ylabel(r"Gyenge keveredési szög $\sin^2\theta_W(Q)$", color="#0f172a")
     ax1.legend(loc="upper left", facecolor="#f8fafc", edgecolor="#0284c7", labelcolor="#0f172a", fontsize=8.2)
@@ -292,7 +292,7 @@ def make_fig4(lang: str) -> None:
     obs_vals = [0.0, 8.61, 50.11, 58.72]
     x = np.arange(len(cats))
     w = 0.34
-    ax1.bar(x - w / 2, tau_vals, width=w, color="#059669", edgecolor="#0f172a", label="Tau Core (Theorem C1)" if lang == "en" else "Tau Core (Theorem C1)")
+    ax1.bar(x - w / 2, tau_vals, width=w, color="#059669", edgecolor="#0f172a", label="Tau Scale Ansatz (C19; P30 Route I–II)" if lang == "en" else "Tau skála-ansatz (C19; P30 I–II. út)")
     ax1.bar(x + w / 2, obs_vals, width=w, color="#0284c7", edgecolor="#0f172a", label="NuFIT 5.3 (Normal Ordering Floor)" if lang == "en" else "NuFIT 5.3 (Normál hierarchia küszöb)")
     ax1.axhline(72.0, color="#dc2626", linestyle="--", lw=2.0, label="DESI DR1 + Planck 95% CL Upper Limit (72 meV)" if lang == "en" else "DESI DR1 + Planck 95% CL felső határ (72 meV)")
     for xi, tv in zip(x, tau_vals):
@@ -301,10 +301,10 @@ def make_fig4(lang: str) -> None:
     ax1.set_xticklabels(cats, color="#0f172a", fontsize=10)
     ax1.set_ylim(0, 84)
     if lang == "en":
-        ax1.set_title("A. Neutrino Mass Spectrum (Theorem C1, Gates P8 & P9)", color="#b45309")
+        ax1.set_title("A. Neutrino Mass Benchmark (C19 Scale Ansatz / P30 Route I–II)", color="#b45309")
         ax1.set_ylabel("Mass [meV]", color="#0f172a")
     else:
-        ax1.set_title("A. Neutrínótömeg-spektrum (Theorem C1, P8 és P9 kapuk)", color="#b45309")
+        ax1.set_title("A. Neutrínótömeg-benchmark (C19 skála-ansatz / P30 I–II. út)", color="#b45309")
         ax1.set_ylabel("Tömeg [meV]", color="#0f172a")
     ax1.legend(loc="upper left", facecolor="#f8fafc", edgecolor="#0284c7", labelcolor="#0f172a", fontsize=8.2)
 
